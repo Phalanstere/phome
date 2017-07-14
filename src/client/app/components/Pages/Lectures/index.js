@@ -508,7 +508,12 @@ class Lectures extends Component {
 
     return (
         <div className = 'LecturesPage' >
+            <h2 style = {{ color: '#337ab7' }} >
+              { this.state.TEXT.__('Lectures') }
+            </h2>
+            <div className = 'Lectures_Section'>
             { this.renderLectures() }
+            </div>
         </div>  
     );
   }

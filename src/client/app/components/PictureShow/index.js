@@ -407,9 +407,11 @@ export default class PictureShow extends Component {
 
     let options = this.event_factory();
 
-
-    // console.log("Anzeigen der Liste:");
-    // console.log( this.props.list );
+    var a = store.getState();
+    if (a.active_animator) 
+      {
+      global.store.dispatch({ type: "CHECK_ANIMATOR", payload: 1 });   
+      }
 
     this.animator = new Animator(options);    
     // registers the animator  
@@ -423,9 +425,6 @@ export default class PictureShow extends Component {
 
   render() {  
     let x = this.render_images(); 
-
-    console.log(x);
-
     return (
 
       <div>
