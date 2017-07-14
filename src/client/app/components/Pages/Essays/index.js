@@ -577,7 +577,7 @@ class Essays extends Component {
     return (
         <div className = 'EssayPage' >
             <h2 style = {{ color: '#337ab7' }} >
-              { this.state.TEXT.__('Essays') }
+              _{ this.state.TEXT.__('Essays') }
             </h2>
           <div className = 'EssayContainer'>
             <div>

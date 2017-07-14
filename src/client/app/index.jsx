@@ -44,8 +44,10 @@ import AudioPieces from './components/Pages/AudioPieces';
 
 import AudioArt from './components/Pages/AudioArt';
 
+import Discography from './components/Pages/Discography';
 
-import Archive from './components/Pages/Archive';
+
+// import Archive from './components/Pages/Archive';
 import Biography from './components/Pages/Biography';
 import Book from './components/Pages/Book';
 
@@ -189,13 +191,12 @@ ReactDOM.render((
                 <Route path="/audio" render={()=><Audio/>}/>
                 <Route path="/audio_pieces" render={()=><AudioPieces/>}/>                
 
-
                 <Route path="/audio_art" render={()=><AudioArt/>}/>
+                <Route path="/discography" render={()=><Discography/>}/>
 
                 <Route path="/computerworld" render={()=><Computerworld/>}/>
 
 
-                <Route path="/archive" render={()=><Archive/>}/>
                 <Route path="/biography" render={()=><Biography/>}/>
 
 
