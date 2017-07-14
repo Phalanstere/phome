@@ -1,0 +1,4 @@
+﻿As a Cultural theorist, Martin Burckhardt has written several books about the genealogy of the machine that have received broad interest and have been translated into several languages. His last one, „Philosophy of the Machine“, will be published at Matthes & Seitz, fall 2017. Being surrounded by state by state-of-the-art machinery, Burckhardt has developed a deep interest in programming. This lead to various art installations as well as the foundation of Ludic Philosophy, which has published a modern social online game, coalescing fact and fiction. 
+As a programmer, he got involved in various web projects, deploying state of the art technology as well as advaned machine learning an AI technologies.
+
+
