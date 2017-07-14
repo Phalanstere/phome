@@ -258,6 +258,64 @@ font-weight: 600;
 
 
 
+.LecturesPage
+{
+position: absolute;
+left: 0;
+right: 0;
+top: 52px;
+margin: auto;
+
+font-size: calc(12px + 0.2vw);
+line-height: calc(13px + 0.7vw);
+background-position: center bottom;
+opacity: 1;
+width: 80%;
+height: 94%;
+padding-top: 3vw;
+padding-bottom: 5vw;
+color: black;
+overflow: auto;
+font-family: Open Sans;
+background: white;  
+}
+
+
+.lecture
+{
+margin-top: 0.6vw;
+width: 50%;
+text-align: justify;
+}
+
+.lecture_title {
+margin-right: 4px;  
+color: rgb(0,80,200);
+}
+
+.lecture_subtitle
+{ 
+margin-right: 4px;
+}
+
+lecture_where {
+margin-right: 4px; 
+}
+
+
+.lecture_context 
+{
+color: darkslategray;
+margin-right: 4px;    
+}
+
+.lecture_date 
+{
+color: darkslategray; 
+}
+
+
+
 .ArticlesPage
 {
 position: absolute;

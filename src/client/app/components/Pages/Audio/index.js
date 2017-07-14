@@ -36,6 +36,7 @@ class Audio extends Component {
     this.image          = null;
     this.directed_by    = null;
     this.duration       = null;
+    this.link           = null;
 
     if (audio.image) this.image = ( <img src = { audio.image } /> );
 

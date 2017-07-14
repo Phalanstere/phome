@@ -1,3 +1,4 @@
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 // import Provider from './components/Provider';
@@ -35,9 +36,9 @@ import Essays from './components/Pages/Essays';
 import Essay from './components/Pages/Essay';
 
 import RadioEssays from './components/Pages/RadioEssays';
-
-
 import Journalism from './components/Pages/Journalism';
+import Lectures from './components/Pages/Lectures';
+
 import TwinComplex from './components/Pages/TwinComplex';
 import Audio from './components/Pages/Audio';
 import AudioPieces from './components/Pages/AudioPieces';
@@ -56,6 +57,7 @@ import Computerworld from './components/Pages/Computerworld';
 
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
+
 
 
 
@@ -181,8 +183,9 @@ ReactDOM.render((
                 
                 <Route path="/essays" render={()=><Essays/>}/>
                 <Route path="/essay" render={()=><Essay/>}/>
-
                 <Route path="/radio_essays" render={()=><RadioEssays/>}/>
+                <Route path="/lectures" render={()=><Lectures/>}/>
+
 
 
                 <Route path="/journalism" render={()=><Journalism/>}/>
