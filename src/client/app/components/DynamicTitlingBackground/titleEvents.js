@@ -3,6 +3,17 @@ import React, { Component } from 'react';
 	let myblue = '#003399';
 
 
+
+var news = ["News", "Philosophie der Maschine", "Herbst 2017", "Matthes & Seitz Berlin", "All and Nothing", "MIT press, Bston", "Fall 2017"]
+
+
+function createNews(list) {
+for (var i = 0; i < list.length; i++) {
+
+  }  
+}
+
+
    var obj = {
      autostart: true,
    };
@@ -10,14 +21,45 @@ import React, { Component } from 'react';
    obj.events = [];
         
 
-  var e = 	{
+  var e = {
+      type: "greensock",	
+      div: "_Title",
+      time: 100,
+      duration: 300,
+      left: '5%',
+      top: '0%',
+      fontSize: 'calc(30px + 1vw)',
+      color: "red"
+	} 
+
+
+  obj.events.push(e);	
+
+
+  e = {
+      type: "greensock",	
+      div: "CodingPanel",
+      time: 1300,
+      duration: 6000,
+      webkitFilter: "contrast(1.7)",
+      transition: "6s",
+      color: "red"
+	} 
+
+
+  obj.events.push(e);	
+
+  createNews(news);
+
+
+/*
+  e = 	{
 			type: "typewriter",
 			time: 1700,
-			text: 'Martin Burckhardt',
+			text: '_Neues Buch',
 			div: "_Title",
-			color: myblue,
 			duration: 300,
-			fontSize: '1.1em'
+      color: "red",
 			}; 
 
   obj.events.push(e);	
@@ -26,7 +68,21 @@ import React, { Component } from 'react';
 e = 	{
 			type: "typewriter",
 			time: 3000,
-			text: 'Autor',
+			text: '_Die Philosophie der Maschine',
+			div: "_Title",
+			color: myblue,
+			duration: 600,
+			fontSize: '1.15em'
+			}; 
+
+  obj.events.push(e);	
+
+
+
+e = 	{
+			type: "typewriter",
+			time: 7000,
+			text: '_Herbst 2017',
 			div: "_Title",
 			color: myblue,
 			duration: 200,
@@ -40,7 +96,7 @@ e = 	{
   e = {
       type: "greensock",	
       div: "CodingPanel",
-      time: 8300,
+      time: 1300,
       duration: 6000,
       webkitFilter: "contrast(1.7)",
       transition: "6s",
@@ -70,7 +126,7 @@ e = 	{
 	} 
 
   obj.events.push(e);	
-
+*/
 
 
 

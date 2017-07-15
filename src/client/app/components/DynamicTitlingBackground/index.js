@@ -118,8 +118,7 @@ export default class DynamicTitlingBackground extends Component {
         <Titelei options = {TitlingOptions } />
 
         <div id = "credits">
-          Eine Kooperation<br/>
-          zwischen Northern Institute of Technology Management & Ludic Philosophy
+          Web-Design Ludic Philosophy
         </div>
       </div>
 
