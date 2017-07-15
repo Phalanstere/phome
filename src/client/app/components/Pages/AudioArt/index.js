@@ -27,7 +27,7 @@ class AudioArt extends Component {
 
     return (
         <div className ="AudioArtPage">
-       Das ist die Audio Art Seite   
+          still under construction
         </div>
     );
   }

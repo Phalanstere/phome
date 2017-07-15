@@ -4,12 +4,33 @@ import React, { Component } from 'react';
 
 
 
-var news = ["News", "Philosophie der Maschine", "Herbst 2017", "Matthes & Seitz Berlin", "All and Nothing", "MIT press, Bston", "Fall 2017"]
+var news = ["_News", "_Philosophie der Maschine", "_Herbst 2017", "_Matthes & Seitz Berlin", "_All and Nothing", "_MIT press, Boston", "_Fall 2017"]
 
 
-function createNews(list) {
+function createNews(list, obj, start) {
+  
+if (! start) start = 0;
+
+let interval = 1500;
+
+
 for (var i = 0; i < list.length; i++) {
+  let text = list[i];
+  let t = i * interval; 
+  let duration = 40 * text.length;
 
+
+  let e = 	{
+			type: "typewriter",
+			time: t,
+			text: text,
+			div: "_Title",
+			duration: duration,
+      color: "red",
+			}; 
+
+
+  obj.events.push(e);	
   }  
 }
 
@@ -27,10 +48,11 @@ for (var i = 0; i < list.length; i++) {
       time: 100,
       duration: 300,
       left: '5%',
-      top: '0%',
+      top: '76%',
       fontSize: 'calc(30px + 1vw)',
       color: "red"
 	} 
+
 
 
   obj.events.push(e);	
@@ -49,22 +71,23 @@ for (var i = 0; i < list.length; i++) {
 
   obj.events.push(e);	
 
-  createNews(news);
 
+
+createNews(news, obj, 6000);
+
+
+  var e = {
+      type: "greensock",	
+      div: "_Title",
+      time: 11500,
+      duration: 600,
+      left: '105%',
+      top: '76%',
+	} 
+
+  obj.events.push(e);
 
 /*
-  e = 	{
-			type: "typewriter",
-			time: 1700,
-			text: '_Neues Buch',
-			div: "_Title",
-			duration: 300,
-      color: "red",
-			}; 
-
-  obj.events.push(e);	
-
-
 e = 	{
 			type: "typewriter",
 			time: 3000,

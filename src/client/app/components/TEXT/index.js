@@ -135,7 +135,7 @@ i18n.configure({
             "duration": "Dauer",
             "twinkomplex_game": TwinKomplexDE,
             "email": "Wenn Sie eine Frage haben oder mich zu einem Vortrag einladen mögen ... schreiben Sie mir ein ",
-            "reaction": "Wenn ich mich nicht gänzlich in einer Arbeit verloren habe, bemühe ich mich, Ihnen eine rasche Antwort zu geben."
+            "reaction": "Wenn ich mich nicht gänzlich in einer Arbeit verloren habe, bemühe ich mich, Ihnen eine Antwort zu geben."
 
         }
     },

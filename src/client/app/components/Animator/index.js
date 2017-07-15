@@ -724,7 +724,7 @@ this.check_events = function() {
 
          if (self.time > self.fin)
             {
-            console.log("Animation beendet, REWIND ")    
+            console.log("Animation beendet, REWIND " + self.fin)    
             self.rewind();
             }
 
