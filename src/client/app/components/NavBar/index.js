@@ -199,7 +199,7 @@ class NavBar extends Component {
             <NavDropdown eventKey={3} title= {  TEXT.__('Projects') }  id="basic-nav-dropdown">
               <MenuItem eventKey={'Computerwelt'} href="#computerworld">{  TEXT.__('computerworld') }</MenuItem>
               <MenuItem eventKey={'TWINCOMPLEX'} href="#twinkomplex">{  TEXT.__('TwinKomplex') }</MenuItem>
-              
+                <MenuItem eventKey={'ALL_AND_NOTHING'} href="#all_and_nothing">{  TEXT.__('AllNothingSite') }</MenuItem>
             </NavDropdown> 
 
 

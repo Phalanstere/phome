@@ -90,7 +90,9 @@ i18n.configure({
             "duration": "duration",
             "twinkomplex_game": TwinKomplexEN,
             "email": "In case you have a question, want to invite me for a lecture... just write an ",
-            "reaction": "If I  am not totally aborbed by some write, I will try to give you a feedback."
+            "reaction": "If I  am not totally aborbed by some write, I will try to give you a feedback.",
+            "AllNothingSite": "The \"All and Nothing\" Website",            
+            "AllNothingExplain": "Here you can listen to the audio book of All and Nothing (sorry, only German)"
 
         },
         'de': {
@@ -135,7 +137,9 @@ i18n.configure({
             "duration": "Dauer",
             "twinkomplex_game": TwinKomplexDE,
             "email": "Wenn Sie eine Frage haben oder mich zu einem Vortrag einladen mögen ... schreiben Sie mir ein ",
-            "reaction": "Wenn ich mich nicht gänzlich in einer Arbeit verloren habe, bemühe ich mich, Ihnen eine Antwort zu geben."
+            "reaction": "Wenn ich mich nicht gänzlich in einer Arbeit verloren habe, bemühe ich mich, Ihnen eine Antwort zu geben.",
+            "AllNothingSite": "Die Website zu \"Alles und Nichts\"",            
+            "AllNothingExplain": "Hier kann man sich das Audiobuch zu Alles und Nichts anhören",
 
         }
     },

@@ -53,11 +53,10 @@ import Biography from './components/Pages/Biography';
 import Book from './components/Pages/Book';
 
 import Computerworld from './components/Pages/Computerworld';
-
+import AllNothing from './components/Pages/AllNothing';
 
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-
 
 
 
@@ -201,7 +200,8 @@ ReactDOM.render((
 
 
                 <Route path="/biography" render={()=><Biography/>}/>
-
+                
+                <Route path="/all_and_nothing" render={()=><AllNothing/>}/>
 
 
             </div>
