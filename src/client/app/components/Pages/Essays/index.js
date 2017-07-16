@@ -240,8 +240,8 @@ let essays = [
     {
       title: "Unter Strom",
       subtitle: "Der Autor und die elektromagnetische Schrift",
-      publisher: "Sybille Krämer: Computer-Medien-Realität. Suhrkamp Wissenschaft. Frankfurt/M.",
-      number: '',
+      publisher: "Sybille Krämer: Computer-Medien-Realität. Suhrkamp Wissenschaft",
+      number: 'Frankfurt/M.',
       date: '1998',
       id: 13,
         description: {
@@ -285,7 +285,7 @@ let essays = [
     },
     {
       title: "Das Monster und die telematische Guillotine",
-      publisher: "Zäsueren",
+      publisher: "Zäsuren",
       number: "1",
       date: '2000',
       id: 14,
@@ -343,7 +343,8 @@ let essays = [
     {
     title: "Wie war der Himmel so blau!",
       publisher: "Lettre International",
-      date: 'Dezember 2001',
+      number: "Dezember",
+      date: '2001',
       id: 19,
         description: {
           de: "Über den 9. September ",
@@ -373,6 +374,7 @@ let essays = [
     {
     title: "Schein der Macht",
       publisher: "Sepktakuläre Experimente. De Gruyter",
+      number: "Berlin",
       date: '2005',
       id: 22,
         description: {
@@ -381,9 +383,35 @@ let essays = [
         },
     },
     {
+    title: "Ästhetik der Ganzkörperzeichen",
+    subtitle: "Zur Bedeutung der Computerspiele",
+      publisher: "Frankfurter Allgemeine Zeitung",
+      number: "Frankfurt",
+      date: '4.6.2009',
+      id: 23,
+        description: {
+          de: "Über die Ästhetik des Terrors ",
+          en: "On the Aesthetics of Terrorism"  
+        },
+    },
+
+
+    {
+    title: "Der Meister aller Selfies",
+      subtitle: "Zu Jeremy Benthams Auto-Ikone",
+      publisher: "Merkur",
+      number: "August",
+      date: '2015',
+      id: 24,
+        description: {
+          de: "Über die Ästhetik des Terrors ",
+          en: "On the Aesthetics of Terrorism"  
+        },
+    },
+    {
     title: "Selfie mit Kanzlerin",
     publisher: "Merkur",
-    number: "März ",
+    number: "März",
     date: '2016',
       description: {
         de: "Zur Flüchtingskrise und der Logik des viralen Marketings ",
@@ -395,7 +423,7 @@ let essays = [
     title: "Im Netz der kleinen Brüder",
     subtitle: "Über die Modernität der Populismen",
     publisher: "Merkur",
-    number: "Juni ",
+    number: "Juni",
     date: '2016',
       description: {
         de: "Tim Hunt, Rotherham ",
@@ -406,7 +434,7 @@ let essays = [
     {
     title: "Zur Logik des Dividuums",
     publisher: "Tumult",
-    number: "Herbst ",
+    number: "Herbst",
     date: '2016',
       description: {
         de: "Über das Zersplitterung des zeitgenössischen Subjekts",
@@ -417,9 +445,9 @@ let essays = [
     {
     title: "Die Schrecken der Hydra",
       publisher: "Lettre International",
-      number: "Frühjahr ",
+      number: "Frühjahr",
       date: '2016',
-      id: 7,
+      id: 32,
         description: {
           de: "Zur Rundfunkproduktion ",
           en: "On Radio Production"  
@@ -428,15 +456,30 @@ let essays = [
     },
 
     {
+    title: "Geisterdämmerung",
+    subtitle: "Zum Verschwinden des Intellektuellen",
+      publisher: "Lettre International",
+      number: "Winter",
+      date: '2016',
+      id: 33,
+        description: {
+          de: "Zur Rundfunkproduktion ",
+          en: "On Radio Production"  
+        },
+      link: 'https://www.lettre.de/beitrag/burckhardt-martin_die-schrecken-der-hydra'  
+    },
+
+
+    {
     title: "Ich. Allüberall. Depotenziert",
     publisher: "Tumult",
-    number: "Frühjahr ",
+    number: "Frühjahr",
     date: '2017',
       description: {
         de: "Über das Dilemma des zeitgenössischen Subjekts",
         en: "About the Agony of the contemporary Subject"  
       },
-    id: 31,
+    id: 34,
     },
 
     {
@@ -448,9 +491,9 @@ let essays = [
         de: "Über Computer und Räderwerk, als universale Maschine begriffen",
         en: "Computer and wheelwork, understood as a universal machine"  
       },
-    id: 32,
+    id: 35,
+    pages: 15,
     pdf: './resources/Digitalisierung.pdf',
-    pages: 15
 
     },
    

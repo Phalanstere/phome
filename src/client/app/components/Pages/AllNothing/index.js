@@ -28,8 +28,8 @@ class AllNothing extends Component {
 
 
     this.setState({
-				width: width * 0.9,
-        height: height * 0.9
+				width: width,
+        height: height
 			});
 
 

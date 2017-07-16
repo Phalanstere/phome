@@ -17,7 +17,16 @@ let b2 = JSON.stringify(b);
 let b3 = JSON.parse(b2);
 console.log(typeof( b3) );
 */
+// import Metamorhosen_DE from '../../../components/TEXT/Metamorphosen_DE.html';
+// console.log( Metamorphosen_DE );
 
+import Metamorphosen_DE from "html-loader!../../../components/TEXT/Metamorphosen_DE.html";
+import Metamorphosen_EN from "html-loader!../../../components/TEXT/Metamorphosen_EN.html";
+
+import Geist_DE from "html-loader!../../../components/TEXT/Geist_DE.html";
+import Geist_EN from "html-loader!../../../components/TEXT/Geist_EN.html";
+
+var TEXT = global.TEXT;
 
 var books = [
     {
@@ -27,18 +36,27 @@ var books = [
     date: '1994',
     image: './resources/Metamorphosen.jpg',
     description: {
-      de: "Ein Buch",
-      en: "A Book"  
+      de: Metamorphosen_DE,
+      en: Metamorphosen_EN
     },
+
+    sample_chapter: './resources/Metamorphose_Beispiel.pdf',
+    sample_pages: 29,
+
     pages: 394,
     size: 1,
     id: 1
   },
     {
-    title: "Vom Geist der Maschine. Eine Geschichte kultureller Umbrüche",
+    title: "Vom Geist der Maschine",
+    subtitle: "Eine Geschichte kultureller Umbrüche",
     publisher: "Campus Verlag, Frankfurt/New York",  
     date: '1999',
     image: './resources/Geist.jpg',
+    description: {
+      de: Geist_DE,
+      en: Geist_EN
+    },
     pages: 409,
     size: 1,
     id: 2

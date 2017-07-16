@@ -4,6 +4,9 @@ import DynamicPage from  '../../../components/DynamicPage';
 
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import renderHTML from 'react-render-html';
+
+const logo = './resources/pdf.svg';
 
 
 
@@ -19,6 +22,14 @@ class Book extends Component {
 
  }
 
+
+ sampleChapter() {
+    let chapter = this.props.state.actual_book.sample_chapter;
+
+    store.dispatch({ type: "CHAPTER_SELECTED", payload: chapter });  
+    window.location.hash = "#/sample_chapter?id=" + this.props.state.actual_book.id;
+ }
+
  
   render() {
 
@@ -27,8 +38,9 @@ class Book extends Component {
         height: 'calc(100% - 52px)',
         top: '52px',
         width: '100%',
-        background:'ivory',
-        overflow: 'hidden'
+        background:'white',
+        overflow: 'hidden',
+        // backgroundImage: 'url(./resources/Pattern/pixel.png)',
     }
 
   const left = {
@@ -61,9 +73,31 @@ class Book extends Component {
   let contributors = {};
 
 
+  this.pf = null;
+  if (b.sample_chapter) 
+    {
+    this.pdf       = (<div title = { TEXT.__("sample_chapter")} onClick = { this.sampleChapter.bind(this) } className = "sample_chapter">
+                    <img src = { logo } />
+                     </div> 
+                     );
+    }
+
+  let pdf_style = {
+    position: 'absolute',
+    left: 20,
+    top: 20,
+    width: '40px',
+    height: '60px',
+    background: 'red',
+  }
+
+
+  
+
 
     return (
         <div style = { style }>
+          { this.pdf }
           <div style = { left} >
             <img className = 'SingleBook' src = { this.props.state.actual_book.image } />
             <div className = "bookinfoLarge">{ b.publisher + ". " + b.date  + ", " + b.pages + " " + TEXT.__("pages") } </div>
@@ -72,8 +106,8 @@ class Book extends Component {
             <div className = "bookDescription">
               <h1 className = "booktitle">{ b.title}</h1>
               <h3 className = "booksubtitle">{ b.subtitle }</h3>
-              <div>
-                { desc }
+              <div className = "BookDetailed" >
+                {renderHTML(desc)}
               </div>
 
             </div>

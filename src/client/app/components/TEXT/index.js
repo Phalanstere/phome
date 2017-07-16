@@ -43,7 +43,7 @@ let signup_DE = 'In Kürze finden Sie hier einen Zugang, bei dem Sie sich einlog
 let signup_EN = 'Very soon you will have access to a portal, where you can log in and administer your da. For the time being, we are old-fashioned: Just call us if you are interested to participate,'
 
 
-
+import Metamorphosen_DE from './Metamorphosen_DE.txt';
 
 
 
@@ -92,7 +92,13 @@ i18n.configure({
             "email": "In case you have a question, want to invite me for a lecture... just write an ",
             "reaction": "If I  am not totally aborbed by some write, I will try to give you a feedback.",
             "AllNothingSite": "The \"All and Nothing\" Website",            
-            "AllNothingExplain": "Here you can listen to the audio book of All and Nothing (sorry, only German)"
+            "AllNothingExplain": "Here you can listen to the audio book of All and Nothing (sorry, only German)",
+
+            "pages": "pages",
+
+            "Metamorphosen": Metamorphosen_DE,
+
+            "sample_chapter": "sample chapter",
 
         },
         'de': {
@@ -140,6 +146,10 @@ i18n.configure({
             "reaction": "Wenn ich mich nicht gänzlich in einer Arbeit verloren habe, bemühe ich mich, Ihnen eine Antwort zu geben.",
             "AllNothingSite": "Die Website zu \"Alles und Nichts\"",            
             "AllNothingExplain": "Hier kann man sich das Audiobuch zu Alles und Nichts anhören",
+            "pages": "Seiten",
+
+            "Metamorphosen": Metamorphosen_DE,
+            "sample_chapter": "Beispielkapitel",
 
         }
     },
