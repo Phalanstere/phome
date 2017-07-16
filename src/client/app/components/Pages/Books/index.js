@@ -45,6 +45,8 @@ import Kleine_Geschichte_DE from "html-loader!../../../components/TEXT/Kleine_Ge
 import Todo_DE from "html-loader!../../../components/TEXT/Todo_DE.html";
 import Todo_EN from "html-loader!../../../components/TEXT/Todo_EN.html";
 
+import Korean_EN from "html-loader!../../../components/TEXT/Korean_DE.html";
+
 
 var TEXT = global.TEXT;
 
@@ -152,10 +154,16 @@ var books = [
     id: 7,
    },
   {
-    title: "Kleine Geschichte (koreanisch)",
-    publisher: "interbook, Seoul",  
+    title: "The Korean version of \"Kleine Geschichte der großen Gedanken\"",
+    publisher: "Alma, Seoul",  
     date: '2010',
     image: './resources/KleineGeschichteKoreanisch.jpg',
+    
+    description: {
+      de: Korean_EN,
+      en: Korean_EN
+    },
+
     pages: 220,
     size: 0.96,
     id: 8,

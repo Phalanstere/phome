@@ -58,6 +58,7 @@ class Book extends Component {
     top: '10%',
     width: '47%',
     height: '90%',
+    overflow: 'auto'
 
   }
 
