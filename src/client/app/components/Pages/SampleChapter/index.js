@@ -4,7 +4,7 @@ import ReactPDF from 'react-pdf';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-const schedule = './resources/DigitaleMetaphysik.pdf';
+const schedule = './resources/Metamorphosen_Beispiel.pdf';
 const pdfSize = 605;
 
 
@@ -14,20 +14,17 @@ class SampleChapter extends Component {
  constructor(props) {
    super(props);
 
-  this.actual_essay = this.props.state.actual_essay
+  this.actual_book = this.props.state.actual_book
 
    this.state = {
        pageSize: 1,  // war 2.2
        zoom: 2,
-       maxPages: this.actual_essay.pages,
+       maxPages: this.actual_book.sample_pages,
        actualPage: 0,
    }
 
    this.checkSize.bind(this);
-
-  
-   console.log( this.actual_essay.pdf );   
-
+   this.onPageLoad.bind(this);
  }
 
 
@@ -60,7 +57,6 @@ class SampleChapter extends Component {
     const newPdfSize = Math.round( pdfSize * newscale);
 
     this.margin = (this.width - newPdfSize) / 2;
-    console.log("Width " + this.width + " height " + this.height + " neue Fenstergröße " + newPdfSize + " Margin " + this.margin + " Scale " + newscale);
 
     this.setState({
           pageSize: newscale,
@@ -103,6 +99,11 @@ class SampleChapter extends Component {
   }
 
 
+  onPageLoad() {
+    console.log ( this.actual_book.sample_chapter );
+  }
+
+
   render() {
 
     let viewerStyle = {
@@ -120,11 +121,11 @@ class SampleChapter extends Component {
         { rightArrow }
         <div style = { viewerStyle} id = "PdfViewer" className = 'PdfViewer'>
           <ReactPDF
-              file= { this.actual_essay.pdf }
+              file= { this.actual_book.sample_chapter }
               pageIndex={this.state.actualPage}
               scale={ this.state.pageSize}
               onDocumentLoad={this.onDocumentLoad}
-              onPageLoad={this.onPageLoad}
+              onPageLoad={this.onPageLoad.bind(this) }
           />
         </div>
       </div>

@@ -28,7 +28,7 @@ var config = {
       {
       test: /\.txt$/,
       use: 'raw-loader'
-      },
+    },  
       {
         loader: "babel-loader",
         exclude: /node_modules/,

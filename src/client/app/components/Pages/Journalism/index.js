@@ -159,7 +159,6 @@ let essays = [
         en: "On Charles Babbage"  
         },
       id: 9,
-      link: 'http://www.faz.net/aktuell/feuilleton/computerweltschoepfer-vannevar-bush-der-heisse-krieger-14296603-p4.html'
     },
     {
       title: "Alles Fake!",
@@ -186,7 +185,6 @@ let essays = [
         en: "On Grace Hopper"  
         },
       id: 9,
-      link: 'http://www.faz.net/aktuell/feuilleton/computerweltschoepfer-vannevar-bush-der-heisse-krieger-14296603-p4.html'
     },
     {
       title: "Das Genie der Massse",

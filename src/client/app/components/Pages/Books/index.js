@@ -26,6 +26,26 @@ import Metamorphosen_EN from "html-loader!../../../components/TEXT/Metamorphosen
 import Geist_DE from "html-loader!../../../components/TEXT/Geist_DE.html";
 import Geist_EN from "html-loader!../../../components/TEXT/Geist_EN.html";
 
+import Brandlhuber_DE from "html-loader!../../../components/TEXT/Brandlhuber_DE.html";
+import Brandlhuber_EN from "html-loader!../../../components/TEXT/Brandlhuber_EN.html";
+
+
+import Scham_DE from "html-loader!../../../components/TEXT/Scham_DE.html";
+import Scham_EN from "html-loader!../../../components/TEXT/Scham_EN.html";
+
+import Historia_DE from "html-loader!../../../components/TEXT/Historia_DE.html";
+import Historia_EN from "html-loader!../../../components/TEXT/Historia_EN.html";
+
+import HistoriaB_DE from "html-loader!../../../components/TEXT/HistoriaB_DE.html";
+import HistoriaB_EN from "html-loader!../../../components/TEXT/HistoriaB_EN.html";
+
+import Kleine_Geschichte_DE from "html-loader!../../../components/TEXT/Kleine_Geschichte_DE.html";
+
+
+import Todo_DE from "html-loader!../../../components/TEXT/Todo_DE.html";
+import Todo_EN from "html-loader!../../../components/TEXT/Todo_EN.html";
+
+
 var TEXT = global.TEXT;
 
 var books = [
@@ -40,7 +60,7 @@ var books = [
       en: Metamorphosen_EN
     },
 
-    sample_chapter: './resources/Metamorphose_Beispiel.pdf',
+    sample_chapter: './resources/Metamorphosen_Beispiel.pdf',
     sample_pages: 29,
 
     pages: 394,
@@ -57,15 +77,25 @@ var books = [
       de: Geist_DE,
       en: Geist_EN
     },
+
+    sample_chapter: './resources/Geist_Beispiel.pdf',
+    sample_pages: 29,
+
     pages: 409,
     size: 1,
     id: 2
   },
     {
-    title: "Brandlhuber. Eine Fiktion",
+    title: "Brandlhuber",
+    subtitle: "Eine Fiktion",
     publisher: "Verlag der Buchhandlung Walter König, Köln",  
     date: '2005',
     image: './resources/Brandlhuber1.jpg',
+    description: {
+      de: Brandlhuber_DE,
+      en: Brandlhuber_EN
+    },
+
     pages: 150,
     size: 0.8,
     id: 3,
@@ -75,6 +105,11 @@ var books = [
     publisher: "Semele Verlag Berlin",  
     date: '2006',
     image: './resources/Scham.jpg',
+    description: {
+      de: Scham_DE,
+      en: Scham_EN
+    },
+
     pages: 228,
     size: 0.96,
     id: 4,
@@ -88,10 +123,8 @@ var books = [
     size: 0.9,
     id: 5,
     description: {
-      de: `Wenn wir an einem Schulhaus vorbeigehen, auf die Uhr schauen oder einem Polizisten begegnen, finden wir das völlig selbstverständlich. Doch wie sind diese Dinge eigentlich in die Welt gekommen? Sie waren einmal philosophische Ideen. 
-
-Martin Burckhardt erzählt uns ihre Geschichten und beweist, dass die Philosophie nicht nur graue Theorie ist. So erfährt man beispielsweise, dass die Vorläufer des Münzgelds Fleischspieße waren, das Kreuz ursprünglich ein Spottsymbol war und was die Demokratie mit dem Alphabet zu tun hat. Verständlich und amüsant zeigt der Autor, wie die Philosophie unseren Alltag bestimmt.`,
-      en: 'The history of Philosophy, told as a fairy tale.'
+      de: Kleine_Geschichte_DE,
+      en: Kleine_Geschichte_DE
     }
    },
     {
@@ -104,10 +137,16 @@ Martin Burckhardt erzählt uns ihre Geschichten und beweist, dass die Philosophi
     id: 6,
    },
   {
-    title: "Pequena historia",
+    title: "Pequeña historia de las grandes ideas",
     publisher: "Edition siruela",  
     date: '2011',
     image: './resources/Siruela.jpg',
+
+    description: {
+      de: Historia_DE,
+      en: Historia_EN
+    },
+
     pages: 220,
     size: 0.96,
     id: 7,
@@ -122,10 +161,17 @@ Martin Burckhardt erzählt uns ihre Geschichten und beweist, dass die Philosophi
     id: 8,
    },
     {
-    title: "Pequena historia",
-    publisher: "Semele Verlag Berlin",  
+    title: "Pequena História das Grandes Ideias",
+    subtitle: "Como a Filosofia Inventou Nosso Mundo",
+    publisher: "Tinta negra, Rio de Janeiro",  
     date: '2013',
     image: './resources/KleineGeschichteBrasilianisch.jpg',
+
+    description: {
+      de: HistoriaB_DE,
+      en: HistoriaB_EN
+    },
+
     pages: 220,
     size: 0.96,
     id: 9,
@@ -175,7 +221,8 @@ Martin Burckhardt erzählt uns ihre Geschichten und beweist, dass die Philosophi
     id: 11,
    },
     {
-    title: "Alles und Nichts. Ein Pandömium digitaler Weltvernichtung",
+    title: "Alles und Nichts",
+    subtitle: "Ein Pandömium digitaler Weltvernichtung",
     publisher: "Matthes & Seitz, Berlin",  
     date: '2015',
     image: './resources/Alles.jpg',
@@ -191,8 +238,8 @@ Martin Burckhardt erzählt uns ihre Geschichten und beweist, dass die Philosophi
     pages: 220,
     size: 0.8,
     description: {
-      de: "Die spanische Übersetzung von \"Alles und Nichts\", übersetzt von Alberto Ciria",
-      en: "The Spanish version of \"All and Nothing\", translated by von Alberto Ciria",
+      de: Todo_DE,
+      en: Todo_EN
     }
    },
     {

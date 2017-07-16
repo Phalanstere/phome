@@ -51,12 +51,18 @@ import Discography from './components/Pages/Discography';
 // import Archive from './components/Pages/Archive';
 import Biography from './components/Pages/Biography';
 import Book from './components/Pages/Book';
+import SampleChapter from './components/Pages/SampleChapter';
+
+
+
 
 import Computerworld from './components/Pages/Computerworld';
 import AllNothing from './components/Pages/AllNothing';
 
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
+
+
 
 
 
@@ -100,6 +106,13 @@ const reducer = (state = initialState, action) => {
            actual_essay: action.payload,
         })
     break;
+
+    case "CHAPTER_SELECTED":
+        return Object.assign({}, state, {
+           actual_chapter: action.payload,
+        })
+    break;
+
 
     case "AUDIO_SELECTED":
         return Object.assign({}, state, {
@@ -179,6 +192,9 @@ ReactDOM.render((
                 
                 <Route path="/books" render={()=><Books/>}/>
                 <Route path="/book" render={()=><Book/>}/>
+
+                <Route path="/sample_chapter" render={()=><SampleChapter/>}/>
+
                 
                 <Route path="/essays" render={()=><Essays/>}/>
                 <Route path="/essay" render={()=><Essay/>}/>
