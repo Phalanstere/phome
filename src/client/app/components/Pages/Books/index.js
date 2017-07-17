@@ -52,10 +52,9 @@ import Score_DE from "html-loader!../../../components/TEXT/Score_DE.html";
 
 import Alles_DE from "html-loader!../../../components/TEXT/Alles_DE.html";
 
-
-
-
 import Machine_EN from "html-loader!../../../components/TEXT/Maschine_EN.html";
+
+
 
 
 var TEXT = global.TEXT;

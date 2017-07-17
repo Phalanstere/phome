@@ -4,7 +4,10 @@ import DynamicPage from  '../../../components/DynamicPage';
 
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import renderHTML from 'react-render-html';
 
+import vita_DE from  "html-loader!../../../components/TEXT/Vita_DE.html";
+import vita_EN from  "html-loader!../../../components/TEXT/Vita_EN.html";
 
 
 
@@ -71,7 +74,7 @@ class Biography extends Component {
       marginTop: '1vw',
       marginLeft: '1vw',
       height: '92%',
-      width: '36%',
+      width: '35%',
       float: 'left',
       backgroundImage: 'url(' + bg + ')',
 
@@ -79,32 +82,25 @@ class Biography extends Component {
       backgroundRepeat: 'no-repeat'
     }  
 
+ 
 
-    const right = {
-      marginTop: '1vw',
-      marginLeft: '1vw',
-      height: '92%',
-      width: '60%',
-      float: 'left',
-      color: 'rgb(40,40,40)',
-      overflow: 'auto'
-    }  
-
+    let bio = vita_DE;
+    if (this.props.language === "en") bio = vita_EN;
 
 
 
     return (
         <DynamicPage>
-        <div style = { left } >
+        <div className = "BioLeft" style = { left } >
         </div>  
 
-        <div className style = { right} >
+        <div className = "BioRight">
           <div className = "Titling">
             Martin Burckhardt
           </div>
           <div id = "BioSection">
             <div className = "BioColumns">
-              { TEXT.__("BurckhardtVita") }
+              { renderHTML ( bio ) }
             </div>
           </div>
         </div>  
@@ -114,7 +110,7 @@ class Biography extends Component {
 }
 
 
-
+// { TEXT.__("BurckhardtVita") }
 
 function mapStateToProps(state) {
   return {

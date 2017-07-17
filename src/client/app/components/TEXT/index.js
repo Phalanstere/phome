@@ -4,8 +4,6 @@ import * as i18n from 'i18n-for-browser';
 console.log("INTERNATIONAL");
 
 
-
-
 var ProgrammingEN = `In just a weekend, what can you learn about programming?
 More than you ever dared to dream.
 Less than what wou want to accomplish.
@@ -26,6 +24,11 @@ import TwinKomplexEN from './TwinKomplex_EN.txt';
 
 var EisenhowerEN = "If you can't solve a problem, enlarge it.\n(Dwight D. Eisenhower)";
 var EisenhowerDE = "Wenn Sie ein Problem nicht lösen können,\nvergrößern Sie es.\n(Dwight D. Eisenhower)";
+
+
+// import vita_DE from  './Vita_DE.html';
+// import vita_DE from  "html-loader!./Vita_DE.html";
+
 
 
 import vita_DE from  './Vita_DE.txt';
@@ -90,7 +93,7 @@ i18n.configure({
             "duration": "duration",
             "twinkomplex_game": TwinKomplexEN,
             "email": "In case you have a question, want to invite me for a lecture... just write an ",
-            "reaction": "If I  am not totally aborbed by some write, I will try to give you a feedback.",
+            "reaction": " If I  am not totally aborbed by some writing, I will try to give you a feedback.",
             "AllNothingSite": "The \"All and Nothing\" Website",            
             "AllNothingExplain": "Here you can listen to the audio book of All and Nothing (sorry, only German)",
 

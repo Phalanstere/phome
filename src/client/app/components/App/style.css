@@ -16,6 +16,26 @@ text-align: left;
 }
 
 
+#BioSection
+{
+font-family: Open Sans;
+width: 100%;
+height: 96%;  
+overflow: auto;
+}
+
+
+.BioRight
+{
+    margin-top: 1vw;
+    margin-left: 0.25vw;
+    height: 92%;
+    width: 60%;
+    float: left;
+    color: rgb(40,40,40);
+}
+
+
 .BioColumns
 {
 margin-top: 20px;
@@ -23,10 +43,11 @@ margin-top: 20px;
 -moz-column-count: 2; /* Firefox */
 column-count: 2;    
 
--webkit-column-gap: 40px; /* Chrome, Safari, Opera */
--moz-column-gap: 40px; /* Firefox */
-column-gap: 40px;
-font-size: calc(12px + 0.3vw);
+-webkit-column-gap: 4vw; /* Chrome, Safari, Opera */
+-moz-column-gap: 4vw; /* Firefox */
+column-gap: 4vw;
+font-size: calc(10px + 0.3vw);
+line-height: calc(15px + 0.4vw);
 }
 
 #root
@@ -42,12 +63,7 @@ color: darkblue;
 }
 
 
-#BioSection
-{
-width: 100%;
-height: 80%;  
-overflow: auto;
-}
+
 
 .book 
 {
@@ -964,3 +980,4 @@ overflow: hidden;
   color: rgb(0,80,200);
   text-shadow: 2px 1px 5px darkgrey;
 }
+
