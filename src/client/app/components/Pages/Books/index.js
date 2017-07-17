@@ -48,6 +48,16 @@ import Todo_EN from "html-loader!../../../components/TEXT/Todo_EN.html";
 import Korean_EN from "html-loader!../../../components/TEXT/Korean_DE.html";
 
 
+import Score_DE from "html-loader!../../../components/TEXT/Score_DE.html";
+
+import Alles_DE from "html-loader!../../../components/TEXT/Alles_DE.html";
+
+
+
+
+import Machine_EN from "html-loader!../../../components/TEXT/Maschine_EN.html";
+
+
 var TEXT = global.TEXT;
 
 var books = [
@@ -209,7 +219,7 @@ var books = [
     image: './resources/Philosophie.jpg',
     pages: 204,
     size: 0.96,
-    id: 10,
+    id: 11,
     description: {
       de: `Wenn wir an einem Schulhaus vorbeigehen, auf die Uhr schauen oder einem Polizisten begegnen, finden wir das völlig selbstverständlich. Doch wie sind diese Dinge eigentlich in die Welt gekommen? Sie waren einmal philosophische Ideen. 
 
@@ -224,9 +234,13 @@ Martin Burckhardt erzählt uns ihre Geschichten und beweist, dass die Philosophi
     publisher: "Knaus, München",  
     date: '2015',
     image: './resources/Score.jpg',
-    pages: 220,
+    description: {
+      de: Score_DE,
+      en: Score_DE
+    },
+    pages: 352,
     size: 1,
-    id: 11,
+    id: 12,
    },
     {
     title: "Alles und Nichts",
@@ -236,6 +250,11 @@ Martin Burckhardt erzählt uns ihre Geschichten und beweist, dass die Philosophi
     image: './resources/Alles.jpg',
     pages: 220,
     size: 0.7,
+    id: 13,
+    description: {
+      de: Alles_DE,
+      en: Alles_DE
+    }
    },
     {
     title: "Todo y nada",
@@ -245,6 +264,7 @@ Martin Burckhardt erzählt uns ihre Geschichten und beweist, dass die Philosophi
     image: './resources/Todo.jpg',
     pages: 220,
     size: 0.8,
+    id: 14,
     description: {
       de: Todo_DE,
       en: Todo_EN
@@ -258,6 +278,7 @@ Martin Burckhardt erzählt uns ihre Geschichten und beweist, dass die Philosophi
     image: './resources/AllNothing.jpg',
     pages: 220,
     size: 0.8,
+    id: 15,
     description: {
       en: `In 1854, the British mathematician George Boole presented the idea of a universe the elements of which could be understood in terms of the logic of absence and presence: 0 and 1, all and nothing—the foundation of binary code. The Boolean digits 0 and 1 do not designate a quantity. In the Boolean world, x times x always equals x; all and nothing meet in the formula x = xn. As everything becomes digitized, God the clockmaker is replaced by God the programmer. This book–described by its authors as “a theology for the digital world”—explores meaning in a digital age of infinite replication, in a world that has dissolved into information and achieved immortality by turning into a pure sign. 
 All and Nothing compares information that spreads without restraint to a hydra—the mythological monster that grew two heads for every one that was cut off. Information is thousand-headed and thousand-eyed because Hydra’s tracks cannot be deleted. It shows that when we sit in front of a screen, we are actually on the other side, looking at the world as an uncanny reminder of the nondigitized. It compares our personal data to our shadows and our souls, envisioning the subconscious laid out on a digital bier like a corpse.
@@ -274,8 +295,9 @@ The digital world, the authors explain, summons forth fantasies of a chiliastic 
     image: './resources/PhilosophieMaschine.jpg',
     pages: 350,
     size: 0.8,
+    id: 16,
     description: {
-      en: "The philosophy of the machine",
+      en: Machine_EN,
       de: "Die Maschine ist die große Unbekannte des Denkens. Wenn dies sonderbar anmutet, weil man ihr als Metapher überall begegnet, so sollte man einen Blick auf unser Gottesbild werfen: Nacheinander wurde er von der Kultur zum Theaterereignis, zum Uhrmacher und schließlich zum Programmierer umgeschult. Worin liegt der philosophische Nerv der Maschine, dieser großen Unbekannten des Denkens? Ausgehend von der Rätselfrage des ›deus ex machina‹ wird der Leser in kurzen, prägnanten Abschnitten mit dem ›Denken ohne Denker‹ konfrontiert. Über die historischen Exkursionen hinaus führt Martin Burckhardt in dieser philosophischen Grundlegung den Leser in die Gegenwart auf den so langsamen wie unweigerlichen Rückzug der Philosophie und der gleichzeitigen Explosion maschineller Intelligenzen hin. Die Maschine ist kein technisches Gadget mehr, sondern längst zur geistigen Größe geworden. Sie ist das Unbewusste der Philosophie, der Gesellschaft überhaupt. Würde der Geist der Maschine freigesetzt, wäre endlich eine nun von allem metaphysischen Ballast befreite, radikal geistesgegenwärtige Philosophie denkbar."
     }
    },

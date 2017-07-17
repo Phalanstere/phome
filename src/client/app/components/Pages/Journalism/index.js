@@ -127,7 +127,7 @@ let essays = [
     },
     {
       title: "Die dunkle Seite der Zahl",
-      subtitle: "Computerweltschöpfer 6. Herman Holleith",
+      subtitle: "Computerweltschöpfer 6. Herman Hollerith",
       publisher: "Frankfurter Allgemeine Zeitung",
       date: '9.9.2016',
       description: {
@@ -148,6 +148,18 @@ let essays = [
         en: "On Ada LovelaCE"  
         },
       id: 9
+    },
+    {
+      title: "Adobe Produkt VoCo",
+      subtitle: "Neue Software manipuliert unsere Sprache",
+      publisher: "Deutschlandradio Kultur. Politisches Feuilleton",
+      date: '15.11.2016',
+      description: {
+        de: "Über Ada Lovelace",
+        en: "On Ada LovelaCE"  
+        },
+      id: 10,
+      link: 'http://www.deutschlandfunkkultur.de/adobe-produkt-voco-neue-software-manipuliert-unsere-sprache.1005.de.html?dram:article_id=371577'
     },
     {
       title: "Der Traum vom Geist, der zur Maschine wird",
@@ -171,10 +183,18 @@ let essays = [
       id: 9,
       link: 'http://www.zeit.de/kultur/2017-01/fake-news-donald-trump-internet-politik-kommunikation-medien'
     },
-
-
-
-
+    {
+      title: "Google & Co",
+      subtitle: "Wenn Staaten ihre Macht outsourcen",
+      publisher: "Deutschlandradio Kultur. Politisches Feuilleton",
+      date: '6.3.2017',
+      description: {
+        de: "Über Ada Lovelace",
+        en: "On Ada LovelaCE"  
+        },
+      id: 10,
+      link: 'http://www.deutschlandfunkkultur.de/google-und-co-wenn-staaten-ihre-macht-an-konzerne-outsourcen.1005.de.html?dram:article_id=380521'
+    },
     {
       title: "Den Computer erziehen",
       subtitle: "Computerweltschöpfer 9. Grace Hopper",

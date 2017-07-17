@@ -395,14 +395,26 @@ let essays = [
         },
     },
 
-
+    {
+    title: "Die Kunst der Versenkung",
+    subtitle: "Computerspiel als Kunstform",
+      publisher: "pro helvetia",
+      number: "Passagen 54",
+      date: '2010',
+      id: 24,
+        description: {
+          de: "Über die Ästhetik des Terrors ",
+          en: "On the Aesthetics of Terrorism"  
+        },
+    link: 'https://prohelvetia.ch/app/uploads/2017/03/passagen_d54.pdf'
+    },
     {
     title: "Der Meister aller Selfies",
       subtitle: "Zu Jeremy Benthams Auto-Ikone",
       publisher: "Merkur",
       number: "August",
       date: '2015',
-      id: 24,
+      id: 25,
         description: {
           de: "Über die Ästhetik des Terrors ",
           en: "On the Aesthetics of Terrorism"  

@@ -948,3 +948,19 @@ overflow: hidden;
     width: auto;
     height: auto;
 }
+
+
+.rez {
+ color: slategrey;
+}
+
+.rez:first-letter {
+  font-size: 3.2vw;
+  line-height: .8em;
+  display: block;
+  margin: -2px -2px 0 -3px;
+  float: left;
+  padding: 3px 5px 0 2px;
+  color: rgb(0,80,200);
+  text-shadow: 2px 1px 5px darkgrey;
+}

@@ -30,8 +30,20 @@ class Book extends Component {
     window.location.hash = "#/sample_chapter?id=" + this.props.state.actual_book.id;
  }
 
+
+ check_book() {
+  if (! this.props.state.actual_book) {
+    window.location.hash = "#/books";
+    this.force_update();
+    }
+
+ }
+ 
+
  
   render() {
+    this.check_book();
+
 
     const style = {
         position: 'absolute',      

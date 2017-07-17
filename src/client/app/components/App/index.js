@@ -12,8 +12,7 @@ class App extends Component {
 
 
   componentDidMount() {
-    console.log("fügt einen Hash Hinzu");
-    window.location.hash = "#/intro"
+    if (window.location.hash === "#/") window.location.hash = "#/intro"
   }
 
 

@@ -67,6 +67,7 @@ class NavBar extends Component {
           });
       break;
 
+
       case 'HOME':
         console.log("Neuabspielen des Intros");
       break;
@@ -98,6 +99,11 @@ class NavBar extends Component {
       break;
     }
 
+  }
+
+
+  digital_survival() {
+    window.open('http://ludicmedia.de/DigitalSurvival', '_blank');
   }
 
 
@@ -200,6 +206,9 @@ class NavBar extends Component {
               <MenuItem eventKey={'Computerwelt'} href="#computerworld">{  TEXT.__('computerworld') }</MenuItem>
               <MenuItem eventKey={'TWINCOMPLEX'} href="#twinkomplex">{  TEXT.__('TwinKomplex') }</MenuItem>
                 <MenuItem eventKey={'ALL_AND_NOTHING'} href="#all_and_nothing">{  TEXT.__('AllNothingSite') }</MenuItem>
+
+                <MenuItem divider />
+                <MenuItem onClick = { this.digital_survival } eventKey={'DIGITAL SURVIVAL'} >{  TEXT.__('Digital Survival Training') }</MenuItem>
             </NavDropdown> 
 
 
