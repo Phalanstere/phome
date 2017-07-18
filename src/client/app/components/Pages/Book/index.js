@@ -73,20 +73,22 @@ class Book extends Component {
     }
 
   const left = {
-    position: 'relative',
-    float: 'left',
-    margintop: '52px',
-    width: '30%',
+    position: 'absolute',
+    margintop: '10%',
+    top: '10%',
     height: '90%',
-    marginTop: '2%',
+    marginTop: '1%',
   }
 
   const right = {
     position: 'absolute',
-    left: '40%',
+    right: '0%',
+    left: '43%',
+    width: '57%',
+    margin: 'auto',
     top: '10%',
-    width: '47%',
-    height: '90%',
+    minWidth: '500px',
+    height: '83%',
     overflow: 'auto'
 
   }
