@@ -60,6 +60,9 @@ import SampleChapter from './components/Pages/SampleChapter';
 import Computerworld from './components/Pages/Computerworld';
 import AllNothing from './components/Pages/AllNothing';
 
+import Blog from './components/Pages/Blog';
+
+
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
@@ -220,6 +223,7 @@ ReactDOM.render((
                 
                 <Route path="/all_and_nothing" render={()=><AllNothing/>}/>
 
+                <Route path="/blog" render={()=><Blog/>}/>
 
             </div>
         </HashRouter >

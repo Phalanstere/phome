@@ -98,7 +98,7 @@ export default class DynamicTitlingBackground extends Component {
         backgroundImage: 'url(' + bg + ')',
         backgroundSize: this.bgDimensions,
         backgroundPosition: 'center',
-        opacity: 1,
+        opacity: 0,
         width: this.state.width,
         height: this.state.height - 52,
         color: 'white',

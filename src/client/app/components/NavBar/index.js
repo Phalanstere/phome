@@ -212,6 +212,10 @@ class NavBar extends Component {
             </NavDropdown> 
 
 
+            <NavItem onSelect={this.handleSelect} eventKey={'HOME'}>
+              <Link to='/blog'>{ TEXT.__('Blog') }</Link>
+            </NavItem>
+
 
           </Nav>
           <Nav pullRight>

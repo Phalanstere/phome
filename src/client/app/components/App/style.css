@@ -380,7 +380,7 @@ width: 100%;
 
 .lecture_title {
 margin-right: 4px;  
-font-size: calc(16px + 0.2vw);  
+font-size: calc(14px + 0.2vw);  
 }
 
 .lecture_subtitle
@@ -442,7 +442,7 @@ column-count: 2;
 .journaille_title
 {
 margin-top: 0.4vw;
-font-size: calc(16px + 0.2vw);     
+font-size: calc(14px + 0.2vw);     
 }
 
 
@@ -471,7 +471,7 @@ top: 8vw;
 .radioessaytitle
 {
 margin-top: 0.4vw;
-font-size: calc(16px + 0.2vw);     
+font-size: calc(14px + 0.2vw);     
 }
 
 
@@ -973,6 +973,28 @@ overflow: hidden;
     width: auto;
     height: auto;
 }
+
+
+
+.Blog{
+position: absolute;
+left: 0;
+right: 0;
+top: 52px;
+margin: auto;
+font-size: calc(15px + 10vw);
+line-height: calc(15px + 0.7vw);
+background-position: center bottom;
+opacity: 1;
+width: 100%;
+height: calc(100% - 52px);
+font-family: Open Sans;
+background: white;
+overflow: hidden;     
+}
+
+
+
 
 
 .rez {
