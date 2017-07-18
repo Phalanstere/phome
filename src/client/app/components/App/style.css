@@ -28,9 +28,9 @@ overflow: auto;
 .BioRight
 {
     margin-top: 1vw;
-    margin-left: 0.25vw;
+    margin-left: 1vw;
     height: 92%;
-    width: 60%;
+    width: 56%;
     float: left;
     color: rgb(40,40,40);
 }
@@ -43,11 +43,11 @@ margin-top: 20px;
 -moz-column-count: 2; /* Firefox */
 column-count: 2;    
 
--webkit-column-gap: 4vw; /* Chrome, Safari, Opera */
--moz-column-gap: 4vw; /* Firefox */
-column-gap: 4vw;
+-webkit-column-gap: 3vw; /* Chrome, Safari, Opera */
+-moz-column-gap: 3vw; /* Firefox */
+column-gap: 3vw;
 font-size: calc(10px + 0.3vw);
-line-height: calc(15px + 0.4vw);
+line-height: calc(15px + 0.6vw);
 }
 
 #root

@@ -121,6 +121,9 @@ var books = [
       en: Scham_EN
     },
 
+    sample_chapter: './resources/DieScham.pdf',
+    sample_pages: 224,
+
     pages: 228,
     size: 0.96,
     id: 4,
@@ -240,6 +243,10 @@ Martin Burckhardt erzählt uns ihre Geschichten und beweist, dass die Philosophi
     pages: 352,
     size: 1,
     id: 12,
+    sample_chapter: './resources/ScoreSample.pdf',
+    sample_pages: 224,
+
+
    },
     {
     title: "Alles und Nichts",

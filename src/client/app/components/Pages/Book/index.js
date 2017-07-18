@@ -7,13 +7,18 @@ import { connect } from 'react-redux';
 import renderHTML from 'react-render-html';
 
 const logo = './resources/pdf.svg';
+import {withRouter} from 'react-router';
 
-
+import Booklist from  '../Books/BookList.js';
 
 class Book extends Component {
 
+
+
  constructor(props) {
    super(props);
+
+
 
    this.state = {
       TEXT: global.TEXT,
@@ -31,18 +36,30 @@ class Book extends Component {
  }
 
 
- check_book() {
+ check_book(location) {
   if (! this.props.state.actual_book) {
-    window.location.hash = "#/books";
-    this.force_update();
+
+    let id = parseInt( location.search.substr(4) );
+
+    for (var i = 0; i < Booklist.length; i++) {
+      let book = Booklist[i];
+      console.log (book.id);
+      if (book.id === id) this.actual_book = book;
     }
 
+    // window.location.hash = "#/books";
+    return true;
+    }
+  return false;
  }
  
 
  
   render() {
-    this.check_book();
+    const { router, params, location, routes } = this.props;
+    console.log(location);
+
+    this.check_book(location);
 
 
     const style = {
@@ -76,6 +93,9 @@ class Book extends Component {
 
 
   let b = this.props.state.actual_book;
+  if (! b) b = this.actual_book;
+  console.log ( b );
+
   let lang = this.props.state.actual_language;
 
   let desc  = "Noch keine Beschreibung";
@@ -112,7 +132,7 @@ class Book extends Component {
         <div style = { style }>
           { this.pdf }
           <div style = { left} >
-            <img className = 'SingleBook' src = { this.props.state.actual_book.image } />
+            <img className = 'SingleBook' src = { b.image } />
             <div className = "bookinfoLarge">{ b.publisher + ". " + b.date  + ", " + b.pages + " " + TEXT.__("pages") } </div>
           </div>  
           <div style = { right } >
@@ -142,4 +162,4 @@ function mapStateToProps(state) {
 
 }
 
-export default connect(mapStateToProps)(Book);
+export default withRouter( connect(mapStateToProps)(Book) );

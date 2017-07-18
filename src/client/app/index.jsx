@@ -8,6 +8,7 @@ import {
     Router,
     Route,
     IndexRoute,
+    Navigation
 } from 'react-router-dom';
 
 import { createBrowserHistory } from 'history'
@@ -191,7 +192,7 @@ ReactDOM.render((
                 <Route path="/signup" render={()=><Login/>}/>
                 
                 <Route path="/books" render={()=><Books/>}/>
-                <Route path="/book" render={()=><Book/>}/>
+                <Route path="/book" component={Navigation} render={()=><Book/>}/>
 
                 <Route path="/sample_chapter" render={()=><SampleChapter/>}/>
 
