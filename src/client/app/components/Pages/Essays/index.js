@@ -478,7 +478,6 @@ let essays = [
           de: "Zur Rundfunkproduktion ",
           en: "On Radio Production"  
         },
-      link: 'https://www.lettre.de/beitrag/burckhardt-martin_die-schrecken-der-hydra'  
     },
 
 
@@ -536,8 +535,15 @@ class Essays extends Component {
  }
 
   onClick(essay) {
+    if (essay.link) {
+
+      window.open( essay.link, '_blank');
+    }
+    else
+    {
     store.dispatch({ type: "ESSAY_SELECTED", payload: essay });  
     window.location.hash = "#/essay?id=" + essay.id;
+    }
   }
 
 
