@@ -16,6 +16,11 @@ text-align: left;
 }
 
 
+#BioPage{
+   
+}
+
+
 #BioSection
 {
 font-family: Open Sans;
@@ -28,10 +33,10 @@ overflow: auto;
 .BioRight
 {
     margin-top: 1vw;
-    margin-left: 1vw;
-    height: 92%;
-    width: 56%;
-    float: left;
+    height: 94%;
+    width: 60%;
+    margin-right: 3%;
+    float: right;
     color: rgb(40,40,40);
 }
 
@@ -48,6 +53,8 @@ column-count: 2;
 column-gap: 3vw;
 font-size: calc(10px + 0.3vw);
 line-height: calc(15px + 0.6vw);
+
+overflow: hidden;
 }
 
 #root
@@ -58,8 +65,8 @@ font-family: "Open Sans" sans-serif;
 .Titling
 {
 width: 100%;
-font-size: 2vw;
-color: darkblue;  
+font-size: calc(16px + 0.5vw);
+color: rgb(0,80,200);  
 }
 
 
@@ -271,6 +278,14 @@ background: white;
 }
 
 
+
+.EssayPage h2
+{
+color: rgb(0,80,200);
+}
+
+
+
 .DiscographyPage
 {
 position: absolute;
@@ -307,8 +322,8 @@ font-family: Open Sans;
 
 .CD img
 {
-width: 100%;
-margin-left: 0;
+width: 80%;
+margin-right: 20%;
 height: auto;  
 box-shadow: 2px 2px 10px black;  
 }
@@ -325,9 +340,6 @@ background: white;
 {  
 margin-top: 1vw;
 font-size: calc(14px + 0.2vw);
-color: rgb(0,80,200);
-font-weight: 600;    
-
 }
 
 
@@ -353,6 +365,12 @@ overflow: auto;
 font-family: Open Sans;
 background: white;  
 }
+
+.LecturesPage h2
+{
+color: rgb(0,80,200);    
+}
+
 
 
 .Lectures_Section
@@ -426,6 +444,13 @@ overflow: auto;
 font-family: Open Sans;
 background: white;
 }
+
+
+.ArticlesPage h2
+{
+color: rgb(0,80,200);    
+}
+
 
 .JournailleContainer
 {
@@ -507,7 +532,13 @@ color: red;
 .essaytitle
 {
 margin-top: 0.33vw;
-font-size: calc(14px + 0.2vw);     
+font-size: calc(14px + 0.2vw);
+color: darkslategray;
+}
+
+.essaytitle:hover
+{
+color: rgb(0,80,200);    
 }
 
 

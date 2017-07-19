@@ -5,7 +5,7 @@ import DynamicPage from  '../../../components/DynamicPage';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-
+import { TweenMax } from "gsap";
 
 
 
@@ -32,6 +32,9 @@ class Contact extends Component {
 
 
   componentDidMount() {
+    let el = document.getElementById("ContactPage");
+    TweenLite.to(el, 0, {opacity:0.01})
+    TweenLite.to(el, 1, {opacity:1})
     store.dispatch({ type: "CHECK_ANIMATOR", payload: 1 }); 
   }
 
@@ -79,7 +82,7 @@ class Contact extends Component {
 
     return (
 
-        <div style = { back} >
+        <div id = "ContactPage" style = { back} >
           <div className = "KontaktFeld">
             <h2 style = {{ color: '#337ab7' }} >
               { this.state.TEXT.__('Contact') }

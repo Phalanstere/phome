@@ -9,7 +9,7 @@ import renderHTML from 'react-render-html';
 import vita_DE from  "html-loader!../../../components/TEXT/Vita_DE.html";
 import vita_EN from  "html-loader!../../../components/TEXT/Vita_EN.html";
 
-
+import { TweenMax } from "gsap";
 
 
 const bg = './resources/Burckhardt.jpg';
@@ -26,15 +26,16 @@ class Biography extends Component {
       TEXT: global.TEXT,
       locale: this.props.language
     }
-
-  console.log("Die Sprache der Seite " + this.props.language); 
-
  }
 
 
 
 
   componentDidMount() {
+    let el = document.getElementById("BioPage");
+    TweenLite.to(el, 0, {opacity:0.01})
+    TweenLite.to(el, 1, {opacity:1})
+    
     store.dispatch({ type: "CHECK_ANIMATOR", payload: 1 }); 
   }
 
@@ -90,7 +91,7 @@ class Biography extends Component {
 
 
     return (
-        <DynamicPage>
+        <DynamicPage id = "BioPage">
         <div className = "BioLeft" style = { left } >
         </div>  
 

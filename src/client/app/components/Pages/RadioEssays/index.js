@@ -204,7 +204,7 @@ class RadioEssays extends Component {
 
     return (
         <div className = 'EssayPage' >
-            <h2 style = {{ color: '#337ab7' }} >
+            <h2>
               { this.state.TEXT.__('Radio-Essays') }
             </h2>
           <div className = 'RadioEssayContainer'>

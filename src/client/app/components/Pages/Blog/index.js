@@ -4,7 +4,7 @@ import ReactPDF from 'react-pdf';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-
+import { TweenMax } from "gsap";
 
 
 class Blog extends Component {
@@ -32,7 +32,6 @@ class Blog extends Component {
         height: height
 			});
 
-
     var a = store.getState();
     if (a.active_animator) 
       {
@@ -40,6 +39,7 @@ class Blog extends Component {
       }
 
     window.addEventListener("resize", this.updateDimensions);
+
   }
 
 
@@ -66,7 +66,7 @@ class Blog extends Component {
 
 
     return (
-      <div className = "Blog">
+      <div id = "Blog" className = "Blog">
         <div className = "BlogFrame">
         <iframe style = { style } src="http://ludicmedia.de:8000" width = { this.state.width } height = { this.state.height } ></iframe>
         </div>

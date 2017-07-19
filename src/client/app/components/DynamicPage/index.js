@@ -30,6 +30,7 @@ export default class DynamicPage extends Component {
 
 
   componentDidMount() {
+
     window.addEventListener("resize", this.updateDimensions);
   }
 
@@ -95,10 +96,13 @@ export default class DynamicPage extends Component {
         overflow: 'hidden'
     }
 
+    let id = "DynamicPage" + new Date().getTime();
+    if (this.props.id) id = this.props.id;
+
 
     return (
 
-      <div style = { style } >
+      <div id = { id } style = { style } >
             <div>{ this.props.children }</div>
       </div>
 

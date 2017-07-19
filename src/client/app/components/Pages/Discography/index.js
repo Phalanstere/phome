@@ -184,7 +184,7 @@ class Discography extends Component {
 
     return (
         <div className = 'DiscographyPage' >
-            <h2 style = {{ color: '#337ab7' }} >
+            <h2 style = {{ color: 'rgb(0,80,200' }} >
               { this.state.TEXT.__('Discography') }
             </h2>
             <div>

@@ -336,7 +336,7 @@ Die Arktis. Stille. Eine Stille, die so steril ist, daß es in den Ohren zu raus
       composer: "Johannes Schmölling",
 
 	    speaker: ['Christian Brückner', 'Peter Fitz'],
-      duration: '21 min'
+      duration: 21
 
     },
    {
@@ -355,6 +355,7 @@ Die Arktis. Stille. Eine Stille, die so steril ist, daß es in den Ohren zu raus
 
       directed_by: "Martin Burckhardt & Johannes Schmölling",
       composer: "Johannes Schmölling",
+      duration: 150
     },
     {
       title: "Klänge und Schatten",
@@ -577,7 +578,7 @@ class AudioPieces extends Component {
 
     return (
         <div className = 'AudioPiecesPage' >
-            <h2 style = {{ color: '#337ab7' }} >
+            <h2 style = {{ color: 'rgb(0,80,200' }} >
               { this.state.TEXT.__('AudioPieces') }
             </h2>
           <div className = 'AudioPiecesContainer'>

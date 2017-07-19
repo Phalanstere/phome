@@ -341,7 +341,7 @@ class Journalism extends Component {
 
     return (
         <div className = 'ArticlesPage' >
-            <h2 style = {{ color: '#337ab7' }} >
+            <h2>
               { this.state.TEXT.__('Articles') }
             </h2>
           <div className = 'JournailleContainer'>
