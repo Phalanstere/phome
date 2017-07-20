@@ -249,8 +249,7 @@ column-count: 3;
 
 .together
 {
-font-style: italic;
-  
+color: darkslategray;
 }
 
 
@@ -533,12 +532,11 @@ color: red;
 {
 margin-top: 0.33vw;
 font-size: calc(14px + 0.2vw);
-color: darkslategray;
 }
 
 .essaytitle:hover
 {
-color: rgb(0,80,200);    
+   
 }
 
 

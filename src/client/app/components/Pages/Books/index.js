@@ -395,6 +395,11 @@ class Books extends Component {
 
  componentDidMount() {
     this.forceUpdate();
+    /*
+    let el = document.getElementById("ContactPage");
+    TweenLite.to(el, 0, {opacity:0.01})
+    TweenLite.to(el, 1, {opacity:1})
+    */
     store.dispatch({ type: "CHECK_ANIMATOR", payload: 1 }); 
     window.addEventListener("resize", this.calculate_grid);
   }

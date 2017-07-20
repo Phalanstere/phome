@@ -5,6 +5,8 @@ import DynamicPage from  '../../../components/DynamicPage';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
+import Audiolist from  '../AudioPieces/AudioList.js';
+import {withRouter} from 'react-router';
 
 
 class Audio extends Component {
@@ -25,6 +27,24 @@ class Audio extends Component {
 
     }
   }
+
+
+ check_audio(location) {
+  if (! this.props.state.actual_audio) {
+    let id = parseInt( location.search.substr(4) );
+
+    for (var i = 0; i < Audiolist.length; i++) {
+      let audio = Audiolist[i];
+      console.log (audio.id);
+      if (audio.id === id) this.actual_audio = audio;
+    }
+
+    // window.location.hash = "#/books";
+    return true;
+    }
+  return false;
+ }
+
 
 
   getAudio(audio) {
@@ -72,10 +92,15 @@ class Audio extends Component {
 
  
   render() {
-
+  const { router, params, location, routes } = this.props;
+  console.log(location);
   
 
+  this.check_audio(location);  
+
   let audio = this.props.state.actual_audio;
+  if (! audio) audio = this.actual_audio;
+
   let lang = this.props.state.actual_language;
 
   let desc  = "Noch keine Beschreibung";
@@ -116,4 +141,5 @@ function mapStateToProps(state) {
 
 }
 
-export default connect(mapStateToProps)(Audio);
+export default withRouter( connect(mapStateToProps)(Audio) );
+
