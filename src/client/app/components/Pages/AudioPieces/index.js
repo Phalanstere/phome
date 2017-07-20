@@ -6,7 +6,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
 import essays from './AudioList.js';
-
+import { TweenMax } from "gsap";
 
 
 class AudioPieces extends Component {
@@ -108,6 +108,10 @@ class AudioPieces extends Component {
 
 
   componentDidMount() {
+    let el = this.dom;
+    TweenLite.to(el, 0, {opacity:0.01})
+    TweenLite.to(el, 1, {opacity:1})
+    store.dispatch({ type: "CHECK_ANIMATOR", payload: 1 }); 
   }
 
   render() {
@@ -132,7 +136,9 @@ class AudioPieces extends Component {
 
 
     return (
-        <div className = 'AudioPiecesPage' >
+        <div 
+        ref={(dom) => { this.dom = dom; }}
+        className = 'AudioPiecesPage' >
             <h2 style = {{ color: 'rgb(0,80,200' }} >
               { this.state.TEXT.__('AudioPieces') }
             </h2>

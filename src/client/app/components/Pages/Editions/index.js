@@ -7,6 +7,7 @@ import { connect } from 'react-redux';
 
 import editions from './list.js';
 
+import { TweenMax } from "gsap";
 
 
 class Editions extends Component {
@@ -31,6 +32,10 @@ class Editions extends Component {
 
 
   componentDidMount() {
+    let el = this.dom;
+    TweenLite.to(el, 0, {opacity:0.01})
+    TweenLite.to(el, 1, {opacity:1})
+    store.dispatch({ type: "CHECK_ANIMATOR", payload: 1 }); 
   }
 
 
@@ -116,7 +121,9 @@ class Editions extends Component {
 
 
     return (
-        <div className = 'EditionPage' >
+        <div id = "EditionPage" 
+         ref={(dom) => { this.dom = dom; }}
+         className = 'EditionPage' >
             <h2>
               { this.state.TEXT.__('Editions') }
             </h2>

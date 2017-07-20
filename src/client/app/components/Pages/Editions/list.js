@@ -19,7 +19,7 @@ let editions = [
     publisher: "Kulturverlag Kadmos, Berlin",  
     date: '1996',
     image: './resources/Lenotre.jpg',
-    type_of_work: "Übersetzung aus dem Französischen",
+    type_of_work: "Übersetzung",
 
     pages: 274,
     size: 1,
@@ -31,7 +31,7 @@ let editions = [
     publisher: "Kulturverlag Kadmos, Berlin",  
     date: '1996',
     image: './resources/Klossowski.jpg',
-    type_of_work: "Übersetzung aus dem Französischen",
+    type_of_work: "Übersetzung",
 
     pages: 274,
     size: 1,
@@ -68,7 +68,7 @@ let editions = [
     publisher: "Semele Verlag, Berlin",  
     date: '2006',
     image: './resources/Maeder.jpg',
-    type_of_work: "Übersetzung aus dem Amerikanischen",
+    type_of_work: "Übersetzung",
 
     pages: 320,
     size: 1,

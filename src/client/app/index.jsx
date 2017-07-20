@@ -39,6 +39,7 @@ import Editions from './components/Pages/Editions';
 import RadioEssays from './components/Pages/RadioEssays';
 import Journalism from './components/Pages/Journalism';
 import Lectures from './components/Pages/Lectures';
+import Lecture from './components/Pages/Lecture';
 
 import TwinComplex from './components/Pages/TwinComplex';
 import Audio from './components/Pages/Audio';
@@ -66,7 +67,6 @@ import Performances from './components/Pages/Performances';
 
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-
 
 
 
@@ -124,6 +124,13 @@ const reducer = (state = initialState, action) => {
            actual_audio: action.payload,
         })
     break; 
+
+    case "LECTURE_SELECTED":
+        return Object.assign({}, state, {
+           actual_lecture: action.payload,
+        })
+    break; 
+
 
 
     case "ACTIVE_ANIMATOR":
@@ -208,7 +215,7 @@ ReactDOM.render((
 
                 <Route path="/radio_essays" render={()=><RadioEssays/>}/>
                 <Route path="/lectures" render={()=><Lectures/>}/>
-
+                <Route path="/lecture" render={()=><Lecture/>}/>
 
 
                 <Route path="/journalism" render={()=><Journalism/>}/>

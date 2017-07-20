@@ -5,7 +5,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
 import events from './list.js';
-
+import { TweenMax } from "gsap";
 
 
 
@@ -28,14 +28,9 @@ class Performances extends Component {
 
 
   componentDidMount() {
-    let width = window.innerWidth;
-    let height = window.innerHeight - 52;
-
-
-    this.setState({
-				width: width,
-        height: height
-			});
+    let el = this.dom;
+    TweenLite.to(el, 0, {opacity:0.01})
+    TweenLite.to(el, 1, {opacity:1})
 
 
     var a = store.getState();
@@ -111,7 +106,9 @@ class Performances extends Component {
 
 
     return (
-        <div className = 'EssayPage' >
+        <div 
+          ref={(dom) => { this.dom = dom; }}
+          className = 'EssayPage' >
             <h2>
               { this.state.TEXT.__('Performances') }
             </h2>
