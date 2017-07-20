@@ -103,6 +103,9 @@ i18n.configure({
 
             "sample_chapter": "sample chapter",
 
+            "Performances": "Performances / Installations",
+            "Editions": "Editions and Translations",
+
         },
         'de': {
         	"hello": "Hallo Welt",
@@ -153,6 +156,9 @@ i18n.configure({
 
             "Metamorphosen": Metamorphosen_DE,
             "sample_chapter": "Beispielkapitel",
+            
+            "Performances": "Performances / Installationen",
+            "Editions": "Übersetzungs- und Herausgebertätigkeit",
 
         }
     },

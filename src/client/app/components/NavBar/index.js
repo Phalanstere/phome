@@ -182,6 +182,7 @@ class NavBar extends Component {
 
               <MenuItem eventKey={'essays'} href="#essays">{  TEXT.__('Essays') }</MenuItem>
               <MenuItem eventKey={'radio_essays'} href="#radio_essays">{  TEXT.__('Radio Essays') }</MenuItem>
+              <MenuItem eventKey={'editions'} href="#editions">{  TEXT.__('Editions') }</MenuItem>
               <MenuItem eventKey={'journalism'} href="#journalism">{  TEXT.__('Journalism') }</MenuItem>
               <MenuItem eventKey={'lectures'} href="#lectures">{  TEXT.__('Lectures') }</MenuItem>
             </NavDropdown>            

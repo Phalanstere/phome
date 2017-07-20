@@ -35,7 +35,7 @@ import Login from './components/Pages/Login';
 import Books from './components/Pages/Books';
 import Essays from './components/Pages/Essays';
 import Essay from './components/Pages/Essay';
-
+import Editions from './components/Pages/Editions';
 import RadioEssays from './components/Pages/RadioEssays';
 import Journalism from './components/Pages/Journalism';
 import Lectures from './components/Pages/Lectures';
@@ -61,6 +61,7 @@ import Computerworld from './components/Pages/Computerworld';
 import AllNothing from './components/Pages/AllNothing';
 
 import Blog from './components/Pages/Blog';
+import Performances from './components/Pages/Performances';
 
 
 import { Provider } from 'react-redux';
@@ -202,6 +203,9 @@ ReactDOM.render((
                 
                 <Route path="/essays" render={()=><Essays/>}/>
                 <Route path="/essay" render={()=><Essay/>}/>
+                <Route path="/editions" render={()=><Editions/>}/>
+
+
                 <Route path="/radio_essays" render={()=><RadioEssays/>}/>
                 <Route path="/lectures" render={()=><Lectures/>}/>
 
@@ -224,6 +228,8 @@ ReactDOM.render((
                 <Route path="/all_and_nothing" render={()=><AllNothing/>}/>
 
                 <Route path="/blog" render={()=><Blog/>}/>
+
+                <Route path="/performances" render={()=><Performances/>}/>
 
             </div>
         </HashRouter >
