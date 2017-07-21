@@ -84,13 +84,15 @@ let lectures = [
     title: "Die Guillotine",
      subtitle: "Über den Zusammenhang von Todes­tech­no­lo­gie und Rationalisierung",    
      context: "Ein Vortrag für die Guardi­ni-Stif­tung, im Rahmen des Zeit-Symposions",
-      where: "Berlin, Jagdschloss Glienecke.",
+      where: "Berlin, Jagdschloss Glienecke",
       date: '21. - 23.4. 1996',
       description: {
         de: "Zu Freud und der Mechanik des Unbewussten",
         en: "Freud and the Mechanics of the Unconscious"  
         },
-      id: 7
+      id: 7,
+      pdf: "./resources/Guillotine.pdf",
+      pages: 26
     },
 
     {
@@ -216,7 +218,9 @@ let lectures = [
         de: "Zu Freud und der Mechanik des Unbewussten",
         en: "Freud and the Mechanics of the Unconscious"  
         },
-      id: 17
+      id: 17,
+      pdf: "./resources/Diva.pdf",
+      pages: 18
     },
     {
      title: "Der blinde Fleck",
@@ -261,7 +265,9 @@ let lectures = [
         de: "Zu Freud und der Mechanik des Unbewussten",
         en: "Freud and the Mechanics of the Unconscious"  
         },
-      id: 22
+      id: 22,
+      pdf: "./resources/Liquide.pdf",
+      pages: 32
     },
     {
      title: "Pop und Software",
@@ -283,7 +289,9 @@ let lectures = [
         de: "Zu Freud und der Mechanik des Unbewussten",
         en: "Freud and the Mechanics of the Unconscious"  
         },
-      id: 24
+      id: 24,
+      pdf: "./resources/Terror.pdf",
+      pages: 28
     },
     {
      title: "Ich bin Ihr Flugbegleiter, gnädige Frau!",
@@ -353,6 +361,18 @@ let lectures = [
         },
       id: 28
     },
+
+     {
+     title: "Bild oder Zahl. Geld oder Leben",
+     subtitle: "Zur Bildlichkeit der Geldillusion",
+      where: "Universität Basel",
+      date: '29.4.2008',
+      description: {
+        de: "Bild und Geld",
+        en: "Money and Imagery"  
+        },
+      id: 29
+    },
      {
       title: "The End of the Virtuoso",
       context: "Vortrag im Rahmen von: Wir sind die Roboter – Three days of robot music at Musikbrauerei ",
@@ -396,7 +416,7 @@ let lectures = [
       id: 39
     },
      {
-      title: "I as Another",
+      title: "I is Another",
       subtitle: "The End of the Indivdual",
       context: "Vortrag beim Symposion Individualty/Dividuation, im Rahmen 250-Jahr Feier der HfBK, Hamburg.",
       date: '13.7.2017',
