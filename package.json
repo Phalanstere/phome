@@ -33,6 +33,7 @@
     "react-button": "^1.2.1",
     "react-codemirror": "^1.0.0",
     "react-gsap-enhancer": "^0.3.0",
+    "react-native-audiowaveform": "^1.0.471",
     "react-notification-system": "^0.2.14",
     "react-pdf": "^1.6.1",
     "react-pdf-js": "^1.0.35",
