@@ -105,6 +105,9 @@ i18n.configure({
 
             "Performances": "Performances / Installations",
             "Editions": "Editions and Translations",
+            "TwinKomplexFilms": "TwinKomplex videos",
+            
+            "Downloads": "downloadable files",
 
         },
         'de': {
@@ -159,6 +162,9 @@ i18n.configure({
             
             "Performances": "Performances / Installationen",
             "Editions": "Übersetzungs- und Herausgebertätigkeit",
+            "TwinKomplexFilms": "TwinKomplex-Filme",
+
+            "Downloads": "Dateien zum Download",
 
         }
     },

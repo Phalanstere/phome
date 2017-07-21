@@ -5,6 +5,9 @@ import DynamicPage from  '../../../components/DynamicPage';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
+
+import { TweenMax } from "gsap";
+
 // import essays from './essays.js';
 
 let essays = [
@@ -159,6 +162,9 @@ class Discography extends Component {
 
 
   componentDidMount() {
+    let el = this.dom;
+    TweenLite.to(el, 0, {opacity:0.01})
+    TweenLite.to(el, 1, {opacity:1})
   }
 
   render() {
@@ -183,7 +189,9 @@ class Discography extends Component {
 
 
     return (
-        <div className = 'DiscographyPage' >
+        <div 
+          ref={(dom) => { this.dom = dom; }}
+          className = 'DiscographyPage' >
             <h2 style = {{ color: 'rgb(0,80,200' }} >
               { this.state.TEXT.__('Discography') }
             </h2>

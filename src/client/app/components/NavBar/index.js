@@ -185,6 +185,11 @@ class NavBar extends Component {
               <MenuItem eventKey={'editions'} href="#editions">{  TEXT.__('Editions') }</MenuItem>
               <MenuItem eventKey={'journalism'} href="#journalism">{  TEXT.__('Journalism') }</MenuItem>
               <MenuItem eventKey={'lectures'} href="#lectures">{  TEXT.__('Lectures') }</MenuItem>
+
+              <MenuItem divider />
+
+              <MenuItem eventKey={'downloads'} href="#downloads">{  TEXT.__('Downloads') }</MenuItem>
+
             </NavDropdown>            
 
 
@@ -206,6 +211,8 @@ class NavBar extends Component {
             <NavDropdown eventKey={3} title= {  TEXT.__('Projects') }  id="basic-nav-dropdown">
               <MenuItem eventKey={'Computerwelt'} href="#computerworld">{  TEXT.__('computerworld') }</MenuItem>
               <MenuItem eventKey={'TWINCOMPLEX'} href="#twinkomplex">{  TEXT.__('TwinKomplex') }</MenuItem>
+              <MenuItem eventKey={'TWINCOMPLEXFILMS'} href="#twinkomplex_videos">{  TEXT.__('TwinKomplexFilms') }</MenuItem>
+
                 <MenuItem eventKey={'ALL_AND_NOTHING'} href="#all_and_nothing">{  TEXT.__('AllNothingSite') }</MenuItem>
 
                 <MenuItem divider />

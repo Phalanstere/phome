@@ -41,7 +41,11 @@ import Journalism from './components/Pages/Journalism';
 import Lectures from './components/Pages/Lectures';
 import Lecture from './components/Pages/Lecture';
 
+import Downloads from './components/Pages/Downloads';
+
 import TwinComplex from './components/Pages/TwinComplex';
+import TwinKomplexFilms from './components/Pages/TwinKomplexFilms';
+
 import Audio from './components/Pages/Audio';
 import AudioPieces from './components/Pages/AudioPieces';
 
@@ -69,9 +73,8 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
 
-
-
 // import reducer from './reducers';
+
 
 
 let initialState: State = {
@@ -217,6 +220,8 @@ ReactDOM.render((
                 <Route path="/lectures" render={()=><Lectures/>}/>
                 <Route path="/lecture" render={()=><Lecture/>}/>
 
+                <Route path="/downloads" render={()=><Downloads/>}/>
+
 
                 <Route path="/journalism" render={()=><Journalism/>}/>
                 <Route path="/twinkomplex" render={()=><TwinComplex/>}/>
@@ -237,6 +242,8 @@ ReactDOM.render((
                 <Route path="/blog" render={()=><Blog/>}/>
 
                 <Route path="/performances" render={()=><Performances/>}/>
+                <Route path="/twinkomplex_videos" render={()=><TwinKomplexFilms/>}/>
+
 
             </div>
         </HashRouter >

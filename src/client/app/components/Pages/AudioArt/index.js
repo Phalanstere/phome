@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 
 
 // var Waveform = require('react-waveform');
-
+// import WaveForm from 'react-native-audiowaveform';
 
 
 class AudioArt extends Component {
@@ -27,7 +27,7 @@ class AudioArt extends Component {
 
     return (
         <div className ="AudioArtPage">
-          still under construction
+          still under construction - now with waveforms
         </div>
     );
   }
