@@ -1256,7 +1256,7 @@ width: 100%;
 height: calc(100% - 52px);
 font-family: Open Sans;
 background: black;
-overflow: hidden;      
+overflow-y: auto;  
 }
 
 

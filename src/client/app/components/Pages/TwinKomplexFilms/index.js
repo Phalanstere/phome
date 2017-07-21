@@ -33,6 +33,16 @@ let videos = [
 
   },
   {
+  title: "Psychotest II",  
+  link: 'OSmwlah7ZhY',
+  actors: ['Dieter Bach'],
+  description: {
+      de: "Trailer",
+      en: "Game-Trailer"
+    },
+
+  },
+  {
   title: "Der Offiziant",  
   link: 'WmFV5epMrFk',
   actors: ['Gerd Wameling'],
@@ -53,12 +63,51 @@ let videos = [
 
   },
   {
+  title: "Psychotest 4",  
+  link: 'mcYwwUuhBeo',
+  actors: ['Dieter Bach'],
+  description: {
+      de: "Psychotest 4",
+      en: "Psychotest 4"
+    },
+
+  },
+  {
+  title: "Max Schach",  
+  link: 'anPzBotbtOg',
+  actors: ['Bernhard Schüzu'],
+  description: {
+      de: "Schach",
+      en: "Chess"
+    },
+
+  },
+  {
   title: "The Initiation",  
   link: 'ObA-iVSalj8',
   actors: ['Christian Brückner, Ioana Buliga'],
   description: {
       de: "Initiation",
       en: "Initiation"
+    },
+  },
+
+  {
+  title: "Videoblog Benjamin",  
+  link: 'H2Zpr2RfLG0',
+  actors: ['Bernhard Schütz'],
+  description: {
+      de: "Videoblog",
+      en: "Videoblog"
+    },
+  },
+  {
+  title: "Benjamin-Suche",  
+  link: '0T5QgzrCRMs',
+  actors: ['Bernhard Schütz'],
+  description: {
+      de: "Videoblog",
+      en: "Videoblog"
     },
   },
   {
@@ -68,6 +117,24 @@ let videos = [
   description: {
       de: "Corrupted Interview",
       en: "Corrupted Interview"
+    },
+  },
+  {
+  title: "Hotel 6",  
+  link: 'nn5AkNmydUk',
+  actors: ['Christine Utterberg','Bernhard Schütz'],
+  description: {
+      de: "Corrupted Interview",
+      en: "Corrupted Interview"
+    },
+  },
+  {
+  title: "Offiziant",  
+  link: 'NAIewNTNE70',
+  actors: ['Gerd Wameling'],
+  description: {
+      de: "Offiziant",
+      en: "Offiziant"
     },
   },
   {
@@ -123,7 +190,100 @@ let videos = [
       de: "Warnung",
       en: "The Warning"
     },
-  }
+  },
+  {
+  title: "Psychotest 1",  
+  link: 'N5awu0r0X18',
+  actors: ['Dieter Bach'],
+  description: {
+      de: "Psychotest 1",
+      en: "Psychotest 1"
+    },
+  },
+  {
+  title: "Marlene 1",  
+  link: 'tVE_Hx6rrRs',
+  actors: ['Irm Hermann'],
+  description: {
+      de: "Psychotest 1",
+      en: "Psychotest 1"
+    },
+  },
+
+  {
+  title: "Love Story V",  
+  link: '8NJLOPQQ8RU',
+  actors: ['Christine Utterberg', 'Bernhard Schütz' ],
+  description: {
+      de: "Rollstuhl",
+      en: "Wheelchair"
+    },
+  },
+  {
+  title: "Hannah",  
+  link: 'sPVf-nxx8w4',
+  actors: ['Annika Mauer'],
+  description: {
+      de: "Rollstuhl",
+      en: "Wheelchair"
+    },
+  },
+
+  {
+  title: "Hoschka, Piano",  
+  link: 'U4BBRqTpBUs',
+  actors: ['Torsten Sense'],
+  description: {
+      de: "Piano",
+      en: "Piano"
+    },
+  },
+  {
+  title: "Offiziant Fahrt",  
+  link: 'HOebmQbLyp8',
+  actors: ['Gerd Wamling'],
+  description: {
+      de: "Rollstuhl",
+      en: "Wheelchair"
+    },
+  },
+  {
+  title: "Hotel 3",  
+  link: 'f3ezxKQ280M',
+  actors: ['Christine Utterberg', 'Bernhard Schütz'],
+  description: {
+      de: "Psychotest 1",
+      en: "Psychotest 1"
+    },
+  },
+    {
+  title: "Hotel 1",  
+  link: 'fv7JOY3ur2c',
+  actors: ['Christine Utterberg, Bernhard Schütz'],
+  description: {
+      de: "Hotel 1",
+      en: "Hotel 1"
+    },
+  },
+  {
+  title: "Hotel 4",  
+  link: 'hfLGonV0fnM',
+  actors: ['Christine Utterberg, Bernhard Schütz'],
+  description: {
+      de: "Hotel 1",
+      en: "Hotel 1"
+    },
+  },
+  {
+  title: "Psychotest III",  
+  link: 'I_eyQgslM64',
+  actors: ['Dieter Bach'],
+  description: {
+      de: "Psychotest III",
+      en: "Psychotest III"
+    },
+  },
+
 
 
 
@@ -161,7 +321,9 @@ class TwinKomplexFilms extends Component {
       height: '236',
       width: '420',
       playerVars: { // https://developers.google.com/youtube/player_parameters
-        autoplay: 0
+        autoplay: 0,
+        controls: 1,
+        showinfo: 0,
       }
     };
 
