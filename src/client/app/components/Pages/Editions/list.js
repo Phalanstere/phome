@@ -64,7 +64,7 @@ let editions = [
     },
     {
     author: "Thomas Maeder",
-    title: "Die uglaublichen Verbrechen des Dr. Petiot",
+    title: "Die unglaublichen Verbrechen des Dr. Petiot",
     publisher: "Semele Verlag, Berlin",  
     date: '2006',
     image: './resources/Maeder.jpg',

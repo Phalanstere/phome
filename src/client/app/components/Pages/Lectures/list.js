@@ -91,8 +91,8 @@ let lectures = [
         en: "Freud and the Mechanics of the Unconscious"  
         },
       id: 7,
-      pdf: "./resources/Guillotine.pdf",
-      pages: 26
+      pdf: "./resources/Traum.pdf",
+      pages: 31
     },
 
     {
@@ -116,7 +116,8 @@ let lectures = [
         de: "Zu Freud und der Mechanik des Unbewussten",
         en: "Freud and the Mechanics of the Unconscious"  
         },
-      id: 9
+      id: 9,
+
     },
     {
      title: "Der Autor und die elektromagnetische Schrift",
@@ -373,6 +374,19 @@ let lectures = [
         },
       id: 29
     },
+     {
+     title: "The Making and the Thinking",
+     context: "Im Rahmen der Transmediale",
+      where: "Kongresszentrum, Berlin",
+      date: '29.1.2009',
+      description: {
+        de: "Bild und Geld",
+        en: "Money and Imagery"  
+        },
+      id: 29
+    },
+
+
      {
       title: "The End of the Virtuoso",
       context: "Vortrag im Rahmen von: Wir sind die Roboter – Three days of robot music at Musikbrauerei ",

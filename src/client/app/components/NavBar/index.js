@@ -10,6 +10,59 @@ import { connect } from 'react-redux';
 import {selectLanguage} from '../../actions'
 
 
+/*********************  This is for the index  ***************************************/
+
+import videolist from '../../components/Pages/TwinKomplexFilms/video_list.js';
+import Indexer from '../../components/Indexer';
+
+import audiolist from '../../components/Pages/AudioPieces/AudioList.js';
+import editionlist from '../../components/Pages/Editions/list.js';
+import essaylist from '../../components/Pages/Essays/essays.js';
+import booklist from '../../components/Pages/Books/BookList.js';
+import lecturelist from '../../components/Pages/Lectures/list.js';
+
+let al = { 
+         list: audiolist,
+         name: 'audiolist',
+         fields: ['together_with', 'speaker', 'publisher', 'title']
+         }
+
+let vl = { list: videolist,
+           name: 'videolist', 
+           fields: ['actors'] };
+
+let ell = {
+          list: editionlist,
+          name: 'editionlist',
+          fields: ['author', 'publisher']
+          }
+
+let es = {
+          list: essaylist,
+          name: 'essaylist',
+          fields: ['publisher', 'title']
+          }
+
+
+let bl = {
+          list: booklist,
+          name: 'booklist',
+          fields: ['publisher', 'title']
+          }
+
+
+let ll = {
+          list: lecturelist,
+          name: 'lecturelist',
+          fields: ['where', 'title']
+          }
+
+
+
+let MyIndex = new Indexer([al, vl, ell, es, bl, ll]);
+/****************************** Index Ende ******************************************/
+
+
 
 global.TEXT = TEXT; 
 
@@ -227,8 +280,7 @@ class NavBar extends Component {
 
           </Nav>
           <Nav pullRight>
-
-    
+ 
             <NavItem onSelect={this.handleSelect} eventKey={'CONTACT'} href="#/contact">
               <Link to='/contact'>{ TEXT.__('Contact') }</Link>
             </NavItem>
@@ -243,9 +295,12 @@ class NavBar extends Component {
 
           </Nav>
 
-
         </Navbar.Collapse>
+      
+
       </Navbar>
+
+
     );
     
 

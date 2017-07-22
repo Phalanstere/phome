@@ -16,7 +16,7 @@ var list = [
     type: "pdf",
     link: "./resources/DigitaleMetaphysik.pdf",    
     id: 2    
-    },
+  },
     {
     title: "Die Gattin des Caligula",
     type: "pdf",
@@ -52,7 +52,15 @@ var list = [
     type: "pdf",
     link: "./resources/Liquide.pdf",    
     id: 8    
+  },
+    {
+    title: "Der Traum der Maschine",
+    type: "pdf",
+    link: "./resources/Traum.pdf",    
+    id: 8    
     },
+
+
 ]
 
 

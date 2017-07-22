@@ -91,7 +91,7 @@ var books = [
   },
    {
     title: "Die Scham der Philosophen",
-    publisher: "Semele Verlag Berlin",  
+    publisher: "Semele Verlag, Berlin",  
     date: '2006',
     image: './resources/Scham.jpg',
     description: {
@@ -121,7 +121,7 @@ var books = [
    },
     {
     title: "68. Die Geschichte einer Kulturrevolution",
-    publisher: "Semele Verlag Berlin",  
+    publisher: "Semele Verlag, Berlin",  
     date: '2009',
     image: './resources/Kulturrevolution.jpg',
     pages: 220,

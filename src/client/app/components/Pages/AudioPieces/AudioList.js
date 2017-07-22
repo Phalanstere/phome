@@ -1,8 +1,7 @@
 let audios = [
     {
       title: "Das Altenheim oder Der Tod der Moderne",
-      publisher: "HR (jeweils Erstausstrahlung)",
-      
+      publisher: "HR",
       date: '1984',
       description: {
         de: "Dadaisten im Altenheim",

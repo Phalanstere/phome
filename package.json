@@ -41,6 +41,7 @@
     "react-render-html": "^0.1.6",
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1",
+    "react-search": "^2.0.5",
     "react-slick": "^0.14.11",
     "react-waveform": "^0.1.0",
     "redux": "^3.7.1",
