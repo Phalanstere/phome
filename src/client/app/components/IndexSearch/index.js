@@ -19,6 +19,10 @@ import essaylist from '../../components/Pages/Essays/essays.js';
 import booklist from '../../components/Pages/Books/BookList.js';
 import lecturelist from '../../components/Pages/Lectures/list.js';
 
+import articlelist from '../../components/Pages/Journalism/list.js';
+import performancelist from '../../components/Pages/Performances/list.js';
+
+import radioessaylist from '../../components/Pages/RadioEssays/list.js';
 
 
 let al = { 
@@ -58,8 +62,30 @@ let ll = {
           }
 
 
+let pl = {
+          list: performancelist,
+          name: 'performancelist',
+          fields: ['location', 'title']
+          }
 
-let MyIndex = new Indexer([al, vl, ell, es, bl, ll]);
+let jl = {
+          list: articlelist,
+          name: 'articlelist',
+          fields: ['publisher', 'title']
+          }
+
+
+let rl = {
+          list: radioessaylist,
+          name: 'radioessaylist',
+          fields: ['publisher', 'title']
+          }
+
+
+
+
+
+let MyIndex = new Indexer([al, vl, ell, es, bl, ll, pl, jl, rl]);
 
 
 
@@ -107,8 +133,13 @@ export default class IndexSearch extends Component {
 
 
 
- onClickFinding(occ) {
+ onClickFinding(occ, i) {
       let hash = '';
+      /*
+      this.setState({
+        occurrence: null
+      });
+      */
 
       switch(occ.name) {
           case 'audiolist':
@@ -128,9 +159,22 @@ export default class IndexSearch extends Component {
           break;
 
 
+          case 'articlelist':
+           var link = articlelist[occ.id]; 
+           if (link.link) 
+              {
+              window.open(link.link, '_blank'); 
+              }
+           console.log(link);
+           hash = "#/journalism?id=" + link.id;
+           window.location.hash = hash;
+
+          break;
+
           case 'editionlist':
            var link = booklist[occ.id];
-           hash = "#/book?id=" + link.id
+           hash = "#/editions?id=" + link.id;
+           window.location.hash = hash;
           break;
 
           case 'booklist':
@@ -148,86 +192,86 @@ export default class IndexSearch extends Component {
             hash = "#/lectures";
             window.location.hash = hash;
           break;
+
+          case 'radioessaylist':
+            hash = "#/radio_essays";
+            window.location.hash = hash;
+          break;
+
+          default:
+            alert("UNBEKANNT");
+          break;
+
       }
    
  }
 
 
-  triggerItem(item, occ) {
-    this.onClickFinding(occ);
-    /*
-      let hash = '';
-      
-      switch(occ.name) {
-          case 'audiolist':
-            var link = audiolist[occ.id];
-            console.log(link);
-            hash = "#/audio?id=" + link.id;
-            window.location.hash = hash;
-          break;
-
-          case 'editionlist':
-            alert("Eine Edition");
-          break;
-
-          case 'booklist':
-           var link = booklist[occ.id];
-           hash = "#/book?id=" + link.id;
-           window.location.hash = hash;
-          break;
-
-          case 'essaylist':
-            hash = "#/essays";
-            window.location.hash = hash;
-          break; 
-
-          case 'lecturelist':
-            hash = "#/lectures";
-            window.location.hash = hash;
-          break;
-
-
-      }
-      */
+  triggerItem(item, occ, i) {
+    this.onClickFinding(occ,i);
   }
 
 
   getTitle(occ) {
     console.log(occ);
     var t = '';
-
+    var res = null;
 
     switch(occ.name) {
       case 'videolist':
         t = videolist[occ.id].title;
-
-        return (
+        res = (
           <span>{ t }</span>
           )
       break;
 
       case 'audiolist':
         t = audiolist[occ.id].title;
-
-
-        return (
+        res = (
           <span>{ t } </span>
           )
       break;
 
       case 'essaylist':
-        <span>Ein Essay</span>
+        t = essaylist[occ.id].title;
+
+        res = (
+        <span>{ t }</span>
+        )
       break;
 
       case 'lecturelist':
-        <span>Ein Vortrag</span>
+        t = lecturelist[occ.id].title;
+
+        res = (
+        <span>{ t }</span>
+        )
       break; 
 
       case 'booklist':
-        <span>Ein Buch</span>
+        t = booklist[occ.id].title;
+        res = (
+        <span>{ t }</span>
+        )
+      break;
+
+      case 'articlelist':
+        t = articlelist[occ.id].title;
+        res = (
+        <span>{ t }</span>
+        )
+      break; 
+
+      case 'radioessaylist':
+        t = radioessaylist[occ.id].title;
+        res = (
+        <span>{ t }</span>
+        )
       break;
 
     }
+
+  return res;
 
   }
 
@@ -240,7 +284,7 @@ export default class IndexSearch extends Component {
       return (
           <div key = {i} >
             <hr/>            
-            <div className = "occurrence" onClick = { this.onClickFinding.bind(this, occ) } >
+            <div className = "occurrence" onClick = { this.onClickFinding.bind(this, occ, i) } >
               { title }
           </div>
         </div>
@@ -249,7 +293,7 @@ export default class IndexSearch extends Component {
     else
     {
       return (
-            <div key = { i} className = "occurrence" onClick = { this.onClickFinding.bind(this, occ) } >
+            <div key = { i} className = "occurrence" onClick = { this.onClickFinding.bind(this, occ, i) } >
               { title }
           </div>
       )
@@ -258,7 +302,7 @@ export default class IndexSearch extends Component {
   }
 
   renderFindings() {
-    console.log("sollte die Findings rendern");
+
     ///// 
 
     if (this.state.occurrence) {
@@ -296,13 +340,20 @@ export default class IndexSearch extends Component {
 
 
 
-  onClick(item) 
+  onClick(item, id) 
   {
-    console.log(item);
+  var s = "sugg" + id;
+  
+  var a = document.getElementsByClassName("suggestion");
+  for (var i = 0; i < a.length; i++) {
+    a[i].classList.remove("active_suggestion");
+  }
+
+  document.getElementById(s).classList.add("active_suggestion");
 
   if (item.occurrence.length === 1) {
     console.log("TRIGGER");
-    this.triggerItem(item, item.occurrence[0]);
+    this.triggerItem(item, item.occurrence[0], 0);
     }
   else
     {
@@ -313,8 +364,10 @@ export default class IndexSearch extends Component {
 
 
   getSuggetion(e, i) {
+    var id = "sugg" + i;
+
     return (
-          <div className = "suggestion" key = { i} onClick = { this.onClick.bind(this, e) } >
+          <div id = { id } className = "suggestion" key = { i } onClick = { this.onClick.bind(this, e, i) } >
             { e.value }
         </div>
     )

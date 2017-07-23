@@ -487,12 +487,12 @@ let videos = [
   },
 
   {
-  title: "Cliffhaber - Chapter 6",  
+  title: "Cliffhanger - Chapter 6",  
   link: 'tONof4-kpk4',
   actors: ['Sebastian Blomberg'],
   description: {
-      de: "Videoblog 3",
-      en: "Videoblog 3"
+      de: "Cliffhanger 6",
+      en: "Cliffhanger 6"
     },
   },
 

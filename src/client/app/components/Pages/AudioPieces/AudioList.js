@@ -29,7 +29,7 @@ let audios = [
     },
     {
    title: "Nachrichten aus Südafrika",
-      publisher: "SFB ",
+      publisher: "SFB",
       date: '1987',
       description: {
         de: "Eine Reise durch das Südafrika der Apartheid",
@@ -144,7 +144,7 @@ let audios = [
     },
    {
    title: "Bis ans Ende der Welt",
-      publisher: "NDR ",
+      publisher: "NDR",
       together_with: "Johannes Schmölling",
       date: '1989',
       description: {
@@ -160,7 +160,7 @@ Die Vorstellung, daß eine Forschungsreise im Grunde nur der sinnfällige äßer
 
 Die Arktis. Stille. Eine Stille, die so steril ist, daß es in den Ohren zu rauschen beginnt.`,
 
-    speaker: ['Gerd Wameling', 'Libgart Schwarz', "Walter Schidinger", "Wolgang Rennert"],
+    speaker: ['Gerd Wameling', 'Libgart Schwarz', "Walter Schmidinger", "Wolgang Rennert"],
     image: './resources/Arktis.jpg',
     directed_by: "Martin Burckhardt & Johannes Schmölling",
     },
@@ -426,6 +426,8 @@ Der Kritiker Götz Schmedes schrieb anlässlich der Ursendung in der Funk-Korres
       publisher: "NDR",
       date: '2006',
       id: 25,
+      speaker: ['Irm Hermann', 'Gerd Wameling', 'Stefan Kaminski'],
+      image: './resources/Kriegerdenkmal.jpg',
     },
     {
       title: "Der geschätzte Kollege Dr. Petiot",

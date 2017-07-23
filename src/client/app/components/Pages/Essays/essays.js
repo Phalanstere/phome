@@ -421,7 +421,21 @@ var essays = [
         en: "On the Refugee Crisis and the Logic of Viral Marketing"  
       },
     id: 29,
-    },
+  },
+  {
+    title: "Cybercrime",
+    subtitle: 'In Tobias Gohlis / Thomas Wörtche: Crime & Money',
+    publisher: "Droemer",
+    number: "Mai",
+    date: '2016',
+      description: {
+        de: "Zur Flüchtingskrise und der Logik des viralen Marketings ",
+        en: "On the Refugee Crisis and the Logic of Viral Marketing"  
+      },
+    id: 30,
+  },
+
+
     {
     title: "Im Netz der kleinen Brüder",
     subtitle: "Über die Modernität der Populismen",
@@ -432,7 +446,7 @@ var essays = [
         de: "Tim Hunt, Rotherham ",
         en: "Tim Hunt, Rotherham"  
       },
-    id: 30,
+    id: 31,
     },
     {
     title: "Zur Logik des Dividuums",
@@ -443,14 +457,14 @@ var essays = [
         de: "Über das Zersplitterung des zeitgenössischen Subjekts",
         en: "About the Agony of the contemporary Subject"  
       },
-    id: 31,
+    id: 32,
     },
     {
     title: "Die Schrecken der Hydra",
       publisher: "Lettre International",
       number: "Frühjahr",
       date: '2016',
-      id: 32,
+      id: 33,
         description: {
           de: "Zur Rundfunkproduktion ",
           en: "On Radio Production"  
@@ -464,7 +478,7 @@ var essays = [
       publisher: "Lettre International",
       number: "Winter",
       date: '2016',
-      id: 33,
+      id: 34,
         description: {
           de: "Zur Rundfunkproduktion ",
           en: "On Radio Production"  
@@ -481,7 +495,7 @@ var essays = [
         de: "Über das Dilemma des zeitgenössischen Subjekts",
         en: "About the Agony of the contemporary Subject"  
       },
-    id: 34,
+    id: 35,
     },
 
     {
@@ -493,7 +507,7 @@ var essays = [
         de: "Über Computer und Räderwerk, als universale Maschine begriffen",
         en: "Computer and wheelwork, understood as a universal machine"  
       },
-    id: 35,
+    id: 36,
     pages: 15,
     pdf: './resources/Digitalisierung.pdf',
 

@@ -108,6 +108,7 @@ i18n.configure({
             "TwinKomplexFilms": "TwinKomplex videos",
             
             "Downloads": "downloadable files",
+            "Search": "Search",
 
         },
         'de': {
@@ -165,6 +166,7 @@ i18n.configure({
             "TwinKomplexFilms": "TwinKomplex-Filme",
 
             "Downloads": "Dateien zum Download",
+            "Search": "Suche",
 
         }
     },

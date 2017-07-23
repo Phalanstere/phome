@@ -1372,3 +1372,6 @@ display: none;
     }
 
 
+    .active_suggestion {
+        background: rgb(0,80,200);
+    }
