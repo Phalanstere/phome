@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import NavBar from '../../components/NavBar';
+import IndexSearch from '../../components/IndexSearch';
+
 import './style.css';
 
 class App extends Component {
@@ -22,6 +24,7 @@ class App extends Component {
     return (
       <div>
           <NavBar/>
+          <IndexSearch />
       </div>
     );
   }

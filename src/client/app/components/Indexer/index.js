@@ -29,7 +29,7 @@ this.check_array = function( list, id, name) {
             this.index_list.push(item);
             var el = {
                      value: item,
-                     occurence: [{
+                     occurrence: [{
                                 id:     id,
                                 name:   name
                                 }]
@@ -42,7 +42,7 @@ this.check_array = function( list, id, name) {
                      id: id,
                      name: name
                       }
-             entry.occurence.push(oc); 
+             entry.occurrence.push(oc); 
              }
     }
 
@@ -65,7 +65,7 @@ this.apply_search = function(obj, field, id, name) {
                     
                 var el = {
                      value: search,
-                     occurence: [{
+                     occurrence: [{
                                 id:     id,
                                 name:   name
                                 }]
@@ -80,7 +80,7 @@ this.apply_search = function(obj, field, id, name) {
                          id: id,
                          name: name
                          }
-                entry.occurence.push(oc);          
+                entry.occurrence.push(oc);          
                 }
              
         }

@@ -16,6 +16,7 @@
   "author": "phalanstere <burckhardt@ludicmedia.de> (https://github.com/Phalanstere)",
   "license": "MIT",
   "dependencies": {
+    "autosuggest-trie": "^2.1.1",
     "blessed": "^0.1.81",
     "contactbox": "0.0.10",
     "debug": "^2.6.8",
@@ -28,6 +29,7 @@
     "looped-events": "0.0.58",
     "randomized-colors": "0.0.32",
     "react-ace": "^5.0.1",
+    "react-autosuggest": "^9.3.1",
     "react-bash": "^1.5.3",
     "react-blessed": "^0.1.8",
     "react-button": "^1.2.1",

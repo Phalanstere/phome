@@ -35,7 +35,6 @@ class Audio extends Component {
 
     for (var i = 0; i < Audiolist.length; i++) {
       let audio = Audiolist[i];
-      console.log (audio.id);
       if (audio.id === id) this.actual_audio = audio;
     }
 

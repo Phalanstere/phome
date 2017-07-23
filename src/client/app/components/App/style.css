@@ -1286,3 +1286,89 @@ color: white;
 {
 display: none;    
 }
+
+
+#IndexSearch {
+    position: absolute;
+    top: 52px;
+    min-width: 200px;
+    width: auto;
+    height: auto;
+    min-height: 60px;
+    background: #222;
+    margin-left: 10px;
+    border:solid 1px black;
+    box-shadow: 2px 2px 20px black;
+    z-index: 1001;
+    color: white;
+    font-family: Open Sans;
+    display: none;
+
+}
+
+
+    .IndexSearchInput
+    {
+    width: 160px;    
+    background: rgb(60, 60, 60);
+    border: none;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    outline: none;
+    padding-left: 4px;
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+    }
+
+    .NavbarInput:hover {
+    background: silver;
+    cursor: text;
+    }
+
+
+    .Suggestions {
+        width: 100%;
+        height: auto; 
+        background: #444;
+    }
+
+
+    .suggestion {
+      margin-left: 1vw;
+      margin-right: 1vw;
+      margin-top: 0.5;
+      color: lightblue;  
+      cursor: pointer;
+    }
+
+
+    .occurrence
+    {
+      margin-left: 1vw;
+      margin-right: 1vw;
+      color: lightblue; 
+      cursor: pointer;
+      margin-bottom: 3px;
+    }
+
+    .occurrence:hover
+    {
+    color: white;
+    font-weight: 600;
+    }
+
+
+
+    .VideoPage {
+        position: absolute;
+        top: 52px;
+        height: calc(100% - 52px);
+        width: 100%;
+        left: 0;
+        background: black;
+    }
+
+

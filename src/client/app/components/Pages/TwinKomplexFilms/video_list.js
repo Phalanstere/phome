@@ -30,7 +30,7 @@ let videos = [
 
   },
   {
-  title: "Psychotest II",  
+  title: "Psychotest 2",  
   link: 'OSmwlah7ZhY',
   actors: ['Dieter Bach'],
   description: {
@@ -238,7 +238,7 @@ let videos = [
   {
   title: "Offiziant Fahrt",  
   link: 'HOebmQbLyp8',
-  actors: ['Gerd Wamling'],
+  actors: ['Gerd Wameling'],
   description: {
       de: "Rollstuhl",
       en: "Wheelchair"
@@ -272,12 +272,12 @@ let videos = [
     },
   },
   {
-  title: "Psychotest III",  
+  title: "Psychotest 3",  
   link: 'I_eyQgslM64',
   actors: ['Dieter Bach'],
   description: {
-      de: "Psychotest III",
-      en: "Psychotest III"
+      de: "Psychotest 3",
+      en: "Psychotest 3"
     },
   },
   {

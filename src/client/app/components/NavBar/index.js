@@ -10,58 +10,6 @@ import { connect } from 'react-redux';
 import {selectLanguage} from '../../actions'
 
 
-/*********************  This is for the index  ***************************************/
-
-import videolist from '../../components/Pages/TwinKomplexFilms/video_list.js';
-import Indexer from '../../components/Indexer';
-
-import audiolist from '../../components/Pages/AudioPieces/AudioList.js';
-import editionlist from '../../components/Pages/Editions/list.js';
-import essaylist from '../../components/Pages/Essays/essays.js';
-import booklist from '../../components/Pages/Books/BookList.js';
-import lecturelist from '../../components/Pages/Lectures/list.js';
-
-let al = { 
-         list: audiolist,
-         name: 'audiolist',
-         fields: ['together_with', 'speaker', 'publisher', 'title']
-         }
-
-let vl = { list: videolist,
-           name: 'videolist', 
-           fields: ['actors'] };
-
-let ell = {
-          list: editionlist,
-          name: 'editionlist',
-          fields: ['author', 'publisher']
-          }
-
-let es = {
-          list: essaylist,
-          name: 'essaylist',
-          fields: ['publisher', 'title']
-          }
-
-
-let bl = {
-          list: booklist,
-          name: 'booklist',
-          fields: ['publisher', 'title']
-          }
-
-
-let ll = {
-          list: lecturelist,
-          name: 'lecturelist',
-          fields: ['where', 'title']
-          }
-
-
-
-let MyIndex = new Indexer([al, vl, ell, es, bl, ll]);
-/****************************** Index Ende ******************************************/
-
 
 
 global.TEXT = TEXT; 
@@ -94,9 +42,8 @@ class NavBar extends Component {
 
 
   handleSelect (event, eventKey) {
-    console.log("KEY " + event);
     window.lazarus = event;
-    console.log("EVENT KEY " + eventKey);
+
 
     switch(event) {
       case 'SET_TO_GERMAN':
@@ -119,6 +66,20 @@ class NavBar extends Component {
             locale: 'en'
           });
       break;
+
+
+      case 'SEARCH':
+        var st = document.getElementById("SearchTrigger");
+        var rect = st.getBoundingClientRect();
+        if (document.getElementById('IndexSearch').style.display !== 'block')
+          {
+          document.getElementById('IndexSearch').style.left = (rect.left - 50);
+          document.getElementById('IndexSearch').style.display = 'block'; // show
+          }
+      else document.getElementById('IndexSearch').style.display = 'none';
+
+        
+      break; 
 
 
       case 'HOME':
@@ -279,13 +240,16 @@ class NavBar extends Component {
 
 
           </Nav>
+          
           <Nav pullRight>
- 
+
             <NavItem onSelect={this.handleSelect} eventKey={'CONTACT'} href="#/contact">
               <Link to='/contact'>{ TEXT.__('Contact') }</Link>
             </NavItem>
             
-
+            <NavItem id = "SearchTrigger" onSelect={this.handleSelect} eventKey={'SEARCH'}>
+             { TEXT.__('Search') }
+            </NavItem>
 
 
             <NavDropdown eventKey={8} title= { TEXT.__n('language') } id="basic-nav-dropdown">
@@ -293,10 +257,13 @@ class NavBar extends Component {
               <MenuItem onSelect={this.handleSelect} eventKey={'SET_TO_ENGLISH'}>{ TEXT.__('English') }</MenuItem>
             </NavDropdown>
 
+
+
+
           </Nav>
 
         </Navbar.Collapse>
-      
+        
 
       </Navbar>
 

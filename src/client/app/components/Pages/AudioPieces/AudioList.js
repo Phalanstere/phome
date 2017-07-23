@@ -276,7 +276,7 @@ Die Arktis. Stille. Eine Stille, die so steril ist, daß es in den Ohren zu raus
         de: "Park, Höfling, König",
         en: "Park, Courtier, King"  
         },
-      id: 16,
+      id: 17,
       content: `Der französische Park, die Höflinge, ein delirierender König.`,
       directed_by: "Martin Burckhardt & Johannes Schmölling",
       composer: "Johannes Schmölling",
@@ -294,7 +294,7 @@ Die Arktis. Stille. Eine Stille, die so steril ist, daß es in den Ohren zu raus
         de: "Ada Lovelace",
         en: "Ada Lovelace"  
         },
-      id: 17,
+      id: 18,
       directed_by: "Martin Burckhardt & Johannes Schmölling",
 
       content: `Ada Augusta Lovelace, die große Hysterika und Assistentin Charles Babbages, im inneren Monolog.`,
@@ -316,7 +316,7 @@ Die Arktis. Stille. Eine Stille, die so steril ist, daß es in den Ohren zu raus
         de: "Die seltsamen Launen Howard Hughes",
         en: "The strange vagaries of Howard Hughes"  
         },
-      id: 18,
+      id: 19,
 
       content: 'Howard Hughes. Milliardär, Flugzeugpionier. Vor allem aber: Ein Zwangscharakter, der seinen Urin sammelt, sttrenge Listen verfasst, wie man eine Konservendose öffnet.',
 
@@ -339,7 +339,7 @@ Die Arktis. Stille. Eine Stille, die so steril ist, daß es in den Ohren zu raus
         de: "Eine Kulturgeschichte der Dinge",
         en: "A Material History"  
         },
-      id: 19,
+      id: 20,
 
       content: `Die Geschichte der Dinge - das ist der Versuch, jene Rede zu wiederholen, die vor dem Verstummen (vor der "Verdinglichung") liegt. Dazu aber müssen die Dinge als unfertig, im Stande (oder besser: in der Schwebe) des Nochnicht gedacht werden. Nur hier, im Unfertigen, öffnet sich die Faszination, wird jene Begierde faßbar, die darauf zielt, sich selbst und die Dinge "fertig zu machen". Die Reise ins Innere des Kopfes, der sich selbst auslegt (als Uhr, als Bild, als Maschine), bezeichnet das Unterfangen, das sich Martin Burckhardt und Johannes Schmölling vorgenommen haben. Daraus hervorgegangen ist ein Zyklus von sechs ca. zwanzigminütigen Hörstücken. Nicht eigentlich Hörspiele im klassischen Sinn, als vielmehr auf eine bestimmte Weise getönte, durchstimmte Gedanken- und Empfindungsräume aus Sprache. Geräusch & Musik - Klangräume, in denen der Hörer sich aufhalten und bewegen kann soll, nicht als ein Außenstehender, sondern als derjenige, dem ein Platz freigehalten worden ist. So daß, im Idealfall, es der eigene Kopf ist, in den man hineinsteigen kann.`,
 
@@ -356,7 +356,7 @@ Die Arktis. Stille. Eine Stille, die so steril ist, daß es in den Ohren zu raus
         de: "Eine maschinelle Psychoanalyse",
         en: "A mechanical Psychoanalysis"  
         },
-      id: 20,
+      id: 21,
       content: `"Ein Selbstversuch vor dem Mikrophon: Rückstieg in die Räume der Kindheit, Anamnese, Erinnerungsversuch. Kein O-Ton. Vor der Erinnerung (die eine sich verweigernde, entziehende ist, das Modell der Ungewißheit schlechthin) wird die Idee des O-Tons zu dem, was sie ist: absurd. - Nein, indem ich das Material, das meine Stimme und meine Erinnerung ist, bearbeite, indem ich es schneide, arrangiere und verfremde, 'schreibe' ich. Ich schreibe mit Klängen, mit einer 'akustischen Schrift'. Ich unterlaufe (und das ist meine Absicht) das, was man gemeinhin einen 'Text' nennt. Die Textur meines Textes besteht fortan im Klang meiner Stimme, in der Art, wie ich diesen Klang konstruiere/dekonstruiere/destruiere, sie besteht aus den Klang-Schichten, die ich übereinander lagere, sie besteht aus den Räumen, den akustischen Vorwänden und Hintergründen, die ich mir errichte, sie besteht aus dem metamorphen Klangmaterial, aus den digitalisierten Schatten und Hybriden dessen, was meine Stimme war (oder irgendein anderer Sound, ich erinnere mich nicht mehr). So ist mein Selbstversuch auch ein Versuch über das Medium, eine Ref lexion über meine Arbeit, die mich in die Klangräume, in die Faszination der akustischen Schrift hat eintreten lassen." (Martin Burckhardt)`,
       directed_by: "Martin Burckhardt",
       image: './resources/shadows.jpg',
@@ -370,7 +370,7 @@ Die Arktis. Stille. Eine Stille, die so steril ist, daß es in den Ohren zu raus
         de: "Paranoia",
         en: "Paranoia"  
         },
-      id: 21,
+      id: 22,
       directed_by: "Martin Burckhardt",
       composer: "Martin Burckhardt",
       image: './resources/Paul_Schreber.jpg',
@@ -389,7 +389,7 @@ Schreber ist tot, sein Wahn jedoch hat alle Deutungsversuche überlebt. Wir hän
         de: "Eine Miszelle zu Jacques Lacan",
         en: "Posthumous Jacques Lacan, still talkling"  
         },
-      id: 22,
+      id: 23,
       content: `"Die vielleicht älteste Form des Seminars ist jene kunstvolle Lehre des Kirchenvaters Origines. Weil Gott ja Wort sei, habe sich das Wort, seiner Natur gemäß, Maria ins Ohr gesetzt. Und auf die gleiche Art sei es, nunmehr fleischgewordenes Wort, dem Ohr wieder entschlüpft. Womit Origines nicht nur das undurchsichtige Dogma der Unbefleckten Erkenntnis plausibilisierte, sondern auch die Gedankenfigur der 'Ohrenempfängnis' in die Welt setzte - und damit: das Seminar der Seminare. Indem es das Leben des Wortes behauptet, predigt das Seminar gegen den toten Buchstaben an, die Tinte, gegen alles, was 'druckreif' klingt.
       Dieser Tradition folgend ist mein Hörstück vor allem ein Stück des Hörensagens, eine Apokryphe, eine bisher verborgene Rede also, dem großen Psychoanalytiker, Wortverdreher und Monomanen Jacques Lacan in den Mund gelegt. Denn auch diesem Herrn, der in seinem Seminar eine große Gefolgschaft versammelte, war es dabei nicht um die Literatur, sondern um die Littoralität zu tun. Wenn es dabei eine Lehre gibt, so die des gesprochenen Worts, das im Munde sich dreht und windet, das sich verspricht, versagt - und keine andere Sehnsucht mehr kennt, als die, zu einer Form des höheren Blödsinns zu werden, zum Blablabla der Radiophonie." (Martin Burckhardt)`,
 
@@ -406,7 +406,7 @@ Schreber ist tot, sein Wahn jedoch hat alle Deutungsversuche überlebt. Wir hän
         de: "Über die Erfindung der Dame",
         en: "The Invention of the Lady"  
         },
-      id: 22,
+      id: 24,
       image: './resources/Dame.jpg',
 
       content: `Darf eine Dame Trompete spielen? Oder Schlagzeug? Oder sollte es doch eher Violine sein? Darf eine Dame ihre Reize ausreizen oder sollte ihr Triebwerk auf eine eher untertourige Art laufen? Was unterscheidet eine Dame von der gewöhnlichen Frau? Sind Damen notwendigerweise Frauen? Wäre eine männliche Dame vorstellbar? 
@@ -425,14 +425,14 @@ Der Kritiker Götz Schmedes schrieb anlässlich der Ursendung in der Funk-Korres
       subtitle: "Zur Frage des Helden in der Moderne",
       publisher: "NDR",
       date: '2006',
-      id: 22,
+      id: 25,
     },
     {
       title: "Der geschätzte Kollege Dr. Petiot",
       subtitle: "Vivisektion eines Massenmörders",
       publisher: "rbb",
       date: '2008',
-      id: 22,
+      id: 26,
 
       image: './resources/petiot2.jpg',
       content: `Dr. Marcel Petiot, der französische Arzt und Serienmörder, ist ein besonderer Fall: Er überzeugt durch überwältigenden Charme und begeht seine Taten mit einer ausgeprägten Intelligenz, die sich die jeweiligen Umstände optimal zunutze macht. Als "Teilzeit-Irrer" eingestuft, nutzt er die verminderte Schuldfähigkeit als Freibrief zu einem um so schamloseren Vorgehen. Die Bedingungen, die sich ihm in den Jahren 1939-45 bieten, sind denkbar günstig. Paris, von den Deutschen besetzt, ist ein Ort, an dem das Zwielichtige gedeiht, wo Täuschung und Verrat an der Tagesordnung sind. Petiots Andeutung, dass er der Leiter eines Fluchtnetzes sei, führt ihm in Scharen Menschen zu - Menschen, die allesamt in seiner Praxis verschwinden.`,

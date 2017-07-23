@@ -59,6 +59,7 @@ import Biography from './components/Pages/Biography';
 import Book from './components/Pages/Book';
 import SampleChapter from './components/Pages/SampleChapter';
 
+import Video from './components/Pages/Video';
 
 
 
@@ -134,6 +135,12 @@ const reducer = (state = initialState, action) => {
         })
     break; 
 
+
+    case "VIDEO_SELECTED":
+        return Object.assign({}, state, {
+           actual_video: action.payload,
+        })
+    break;
 
 
     case "ACTIVE_ANIMATOR":
@@ -243,6 +250,8 @@ ReactDOM.render((
 
                 <Route path="/performances" render={()=><Performances/>}/>
                 <Route path="/twinkomplex_videos" render={()=><TwinKomplexFilms/>}/>
+
+                <Route path="/video" render={()=><Video/>}/>
 
 
             </div>
