@@ -296,6 +296,10 @@ var essays = [
           de: "Deleuze, Guattari und ihr Wunschmaschinenkonzept ",
           en: "On Deleuze and Guattari "  
         },
+
+      pdf: 'http://sammelpunkt.philo.at:8080/1770/1/Burckhardt.pdf',
+      pages: 19
+
     },
       {
       title: "Logik des Mischlings",
