@@ -1351,7 +1351,7 @@ display: none;
 
     .occurrence
     {
-      margin-left: 1vw;
+      margin-left: 0.25vw;
       margin-right: 1vw;
       color: lightblue; 
       cursor: pointer;
@@ -1362,6 +1362,20 @@ display: none;
     {
     color: white;
     font-weight: 600;
+    }
+
+
+    .small_logo
+    {
+    width: 16px;
+    height: 16px;   
+    margin-right: 10px; 
+    }
+
+    .small_logo img
+    {
+    width: auto;
+    height: 16px;    
     }
 
 
@@ -1423,3 +1437,5 @@ display: none;
     cursor: pointer;
     background: rgb(0,80,200);
     }
+
+

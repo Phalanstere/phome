@@ -198,6 +198,12 @@ export default class IndexSearch extends Component {
             window.location.hash = hash;
           break;
 
+          case 'performancelist':
+            hash = "#/performances";
+            window.location.hash = hash;
+          break;
+
+
           default:
             alert("UNBEKANNT");
           break;
@@ -220,15 +226,21 @@ export default class IndexSearch extends Component {
     switch(occ.name) {
       case 'videolist':
         t = videolist[occ.id].title;
+
         res = (
-          <span>{ t }</span>
+          <span>
+            <span className = "small_logo"><img src = './resources/logos/video.png' /></span>
+            { t }
+          </span>
           )
       break;
 
       case 'audiolist':
         t = audiolist[occ.id].title;
         res = (
-          <span>{ t } </span>
+          <span>
+            <span className = "small_logo"><img src = './resources/logos/audio.png' /></span>
+            { t } </span>
           )
       break;
 
@@ -236,7 +248,9 @@ export default class IndexSearch extends Component {
         t = essaylist[occ.id].title;
 
         res = (
-        <span>{ t }</span>
+        <span>
+          <span className = "small_logo"><img src = './resources/logos/journal.png' /></span>
+          { t }</span>
         )
       break;
 
@@ -244,28 +258,36 @@ export default class IndexSearch extends Component {
         t = lecturelist[occ.id].title;
 
         res = (
-        <span>{ t }</span>
+        <span>
+          <span className = "small_logo"><img src = './resources/logos/microphone.png' /></span>
+          { t }</span>
         )
       break; 
 
       case 'booklist':
         t = booklist[occ.id].title;
         res = (
-        <span>{ t }</span>
+        <span>
+          <span className = "small_logo"><img src = './resources/logos/book.png' /></span>
+          { t }</span>
         )
       break;
 
       case 'articlelist':
         t = articlelist[occ.id].title;
         res = (
-        <span>{ t }</span>
+        <span>
+          <span className = "small_logo"><img src = './resources/logos/journal.png' /></span>
+          { t }</span>
         )
       break; 
 
       case 'radioessaylist':
         t = radioessaylist[occ.id].title;
         res = (
-        <span>{ t }</span>
+        <span>
+          <span className = "small_logo"><img src = './resources/logos/microphone.png' /></span>
+          { t }</span>
         )
       break;
 

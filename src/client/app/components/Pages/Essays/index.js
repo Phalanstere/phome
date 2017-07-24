@@ -7,8 +7,8 @@ import { connect } from 'react-redux';
 
 import { TweenMax } from "gsap";
 
-// import essays from './essays.js';
-
+import essays from './essays.js';
+/*
 let essays = [
     {
       title: "Digitale Metaphysik",
@@ -514,7 +514,7 @@ let essays = [
   // http://www.martin-burckhardt.de/Arbeitsspeicher.PDF 
   ]
 
-
+*/
 
 
 
