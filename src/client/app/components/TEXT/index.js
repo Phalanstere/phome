@@ -109,6 +109,7 @@ i18n.configure({
             
             "Downloads": "downloadable files",
             "Search": "Search",
+            "with": "with",
 
         },
         'de': {
@@ -167,6 +168,7 @@ i18n.configure({
 
             "Downloads": "Dateien zum Download",
             "Search": "Suche",
+            "with": "mit",            
 
         }
     },

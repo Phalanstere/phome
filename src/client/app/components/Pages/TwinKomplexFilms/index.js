@@ -10,7 +10,23 @@ import {withRouter} from 'react-router';
 import YouTube from 'react-youtube';
 import { TweenMax } from "gsap";
 
-import videos from './video_list.js';
+import videolist from './video_list.js';
+
+
+Array.prototype.shuffle = function() {
+  var i = this.length, j, temp;
+  if ( i == 0 ) return this;
+  while ( --i ) {
+     j = Math.floor( Math.random() * ( i + 1 ) );
+     temp = this[i];
+     this[i] = this[j];
+     this[j] = temp;
+  }
+  return this;
+}
+
+
+let videos = videolist.shuffle();
 
 
 
@@ -18,6 +34,14 @@ class TwinKomplexFilms extends Component {
 
  constructor(props) {
    super(props);
+
+  this.state = {
+      TEXT: global.TEXT,
+      locale: this.props.state.actual_language,
+      max: 12,
+      offset: 0,
+    }
+
  }
 
 
@@ -87,15 +111,22 @@ class TwinKomplexFilms extends Component {
   }
 
 
+
   render_videos() {
     let list = [];
-    for (var i = 0; i < videos.length; i++) {
+    let start = 0 + this.state.offset;
+    let end   = start + 12;
+
+    for (var i = start; i < end; i++) {
     
-    let video = videos[i];
+    if (i < videos.length) 
+      {
+      let video = videos[i];
       
-      list.push(
-       this.get_video(video, i)
-       )
+        list.push(
+        this.get_video(video, i)
+        )
+      }
     }
     
     return list;
@@ -103,11 +134,56 @@ class TwinKomplexFilms extends Component {
 
 
 
+  getMore() {
+    let offset = this.state.offset + 12;
+    this.setState( { 
+      offset: offset,
+
+    } ); 
+  }
+
+
+  back() {
+    let offset = this.state.offset - 12;
+    this.setState( { 
+      offset: offset,
+
+    } ); 
+  }
+
+
+  renderArrows() {
+    let left = null;
+    let right = null;
+    if ( (this.state.offset + 12) < videos.length) 
+      {
+      right = ( <div onClick = { this.getMore.bind(this)} className = 'whitearrowR'>{'>'}</div> );  
+      }
+    
+    if (this.state.offset > 0) 
+      {
+      left = ( <div onClick = { this.back.bind(this)} className = 'whitearrow'>{'<'}</div> );  
+      }
+    
+
+      return (
+        <div className = "video_navigation">
+          { left  }
+          { right }
+        </div>
+      )
+
+  }
+
+
   render() {
     return (
-      <div 
-        className = "TwinKomplexFilms">
-        { this.render_videos() }
+      <div>
+        <div 
+          className = "TwinKomplexFilms">
+          {  this.renderArrows() }
+          { this.render_videos() }
+        </div>
       </div>
 
     );

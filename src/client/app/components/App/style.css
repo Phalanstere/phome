@@ -645,6 +645,10 @@ color: red;
 
 
 
+
+
+
+
 .computerworld
 {
 position: absolute;
@@ -1374,4 +1378,48 @@ display: none;
 
     .active_suggestion {
         background: rgb(0,80,200);
+    }
+
+
+    .video_navigation
+    {
+    color: silver;
+    font-size: 14px;
+    font-weight: 600;
+    width: 100px;
+    padding-top: 1px;
+    height: 32px;
+    margin:auto;
+    margin-top: 8px;
+    background: #222;    
+    text-align: center;    
+    z-index: 1002;
+    }
+
+
+
+    .whitearrow {
+    float: left; 
+    font-family: Oswald;
+    font-size: 20px;
+    width: 50px;
+    height: 30px;
+    color: white;
+
+    font-weight: 800;
+    cursor: pointer;
+    background: rgb(0,80,200);
+    }
+
+    .whitearrowR {
+    float: right; 
+    font-family: Oswald;
+    font-size: 20px;
+    width: 50px;
+    height: 30px;
+    color: white;
+
+    font-weight: 800;
+    cursor: pointer;
+    background: rgb(0,80,200);
     }
