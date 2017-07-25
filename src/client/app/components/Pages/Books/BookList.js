@@ -228,6 +228,7 @@ Martin Burckhardt erzählt uns ihre Geschichten und beweist, dass die Philosophi
    },
     {
     title: "Alles und Nichts",
+    together_with: "Dirk Höfer",
     subtitle: "Ein Pandömium digitaler Weltvernichtung",
     publisher: "Matthes & Seitz, Berlin",  
     date: '2015',
@@ -242,6 +243,7 @@ Martin Burckhardt erzählt uns ihre Geschichten und beweist, dass die Philosophi
    },
     {
     title: "Todo y nada",
+    together_with: "Dirk Höfer",
     subtitle: "Un pandemonio del destrucction del mundo",
     publisher: "Herder Edition, Barcelona",  
     date: '2017',
@@ -256,6 +258,7 @@ Martin Burckhardt erzählt uns ihre Geschichten und beweist, dass die Philosophi
    },
     {
     title: "All and Nothing.",
+    together_with: "Dirk Höfer",
     subtitle: "A digital Apocalypse",
     publisher: "MIT Press, Boston",  
     date: '2017',

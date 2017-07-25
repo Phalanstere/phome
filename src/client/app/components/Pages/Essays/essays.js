@@ -416,6 +416,20 @@ var essays = [
         },
     },
     {
+    title: "Das Unbestimmte. Ein Gespräch",
+    publisher: "Clemens Bellut",
+    number: ": unbestimmt. Ein gestalterischer und philosophischer Reflexionnsbegriff. Lars Müller Publishers",
+    date: '2013',
+      description: {
+        de: "Zur Flüchtingskrise und der Logik des viralen Marketings ",
+        en: "On the Refugee Crisis and the Logic of Viral Marketing"  
+      },
+    id: 30,
+  },
+
+
+
+    {
     title: "Selfie mit Kanzlerin",
     publisher: "Merkur",
     number: "März",

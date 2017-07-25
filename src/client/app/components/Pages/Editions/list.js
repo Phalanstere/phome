@@ -38,7 +38,21 @@ let editions = [
     id: 3
     }, 
     {
-    author: "Christina von Braun, M. Burckhardt, Hartmut Böhme, Friedrich Kittler",
+    author: "Nicolas von Oresme",
+    title: "De Mutatione Monetarum. Traktat über Geldabwertungen",
+    publisher: "Kulturverlag Kadmos, Berlin",  
+    date: '1999',
+    image: './resources/Oresme.jpg',
+    type_of_work: "Nachwort, Herausgabe",
+
+    pages: 274,
+    size: 1,
+    id: 3
+  }, 
+
+
+    {
+    multi_authors: ['Christina von Braun', 'Martin Burckhardt', 'Hartmut Böhme', 'Friedrich Kittler'],
     title: "Interface V",
     subtitle: "Die Politik der Maschine",
     publisher: "Nomos Verlagsges., Hamburg",  

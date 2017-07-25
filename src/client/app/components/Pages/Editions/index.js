@@ -45,6 +45,7 @@ class Editions extends Component {
 
     this.image          = null;
     this.author         = null;
+    this.multi_authors  = null;
     this.title          = null;
     this.subtitle       = null;
     this.publisher      = null;
@@ -57,6 +58,12 @@ class Editions extends Component {
     if (e.image)           this.image = ( <span><img src = { e.image} /></span> );
 
     if (e.author)           this.author = ( <div className = "edition_author"> { e.author }.  </div> );
+
+    if (e.multi_authors)  {
+
+      this.multi_authors = ( <div className = "edition_author"> { e.multi_authors.toString() }.  </div> )
+      }
+
 
     if (e.subtitle)         this.subtitle = ( <span className = "edition_subtitle"> { e.subtitle }.  </span> );
     if (e.publisher)        this.publisher  = ( <div className = "edition_publisher"> { e.publisher }, {e.date}</div> );  
@@ -71,6 +78,7 @@ class Editions extends Component {
             <div className = "info">
 
             { this.author }
+            { this.multi_authors }
             { this.title  }
             { this.subtitle  }
             { this.publisher  }

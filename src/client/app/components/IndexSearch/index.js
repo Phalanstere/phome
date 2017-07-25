@@ -38,7 +38,7 @@ let vl = { list: videolist,
 let ell = {
           list: editionlist,
           name: 'editionlist',
-          fields: ['author', 'publisher']
+          fields: ['author', 'publisher', 'multi_authors']
           }
 
 let es = {
@@ -51,7 +51,7 @@ let es = {
 let bl = {
           list: booklist,
           name: 'booklist',
-          fields: ['publisher', 'title']
+          fields: ['publisher', 'title', 'together_with']
           }
 
 
@@ -244,6 +244,18 @@ export default class IndexSearch extends Component {
           )
       break;
 
+
+      case 'editionlist':
+        t = editionlist[occ.id].title;
+        res = (
+          <span>
+            <span className = "small_logo"><img src = './resources/logos/book.png' /></span>
+            { t } </span>
+          )
+      break;
+
+
+
       case 'essaylist':
         t = essaylist[occ.id].title;
 
@@ -424,7 +436,7 @@ export default class IndexSearch extends Component {
 
     return (
        <div id = "IndexSearch">
-          <input onChange = { this.onChange } className = "IndexSearchInput" type="text" name="firstname"/>
+          <input id = "IndexSearchInput" onChange = { this.onChange } className = "IndexSearchInput" type="text" name="firstname"/>
 
           <div className = "Suggestions">
             { this.renderSuggestions()   }

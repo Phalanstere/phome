@@ -73,8 +73,10 @@ class NavBar extends Component {
         var rect = st.getBoundingClientRect();
         if (document.getElementById('IndexSearch').style.display !== 'block')
           {
+          // now its visible   
           document.getElementById('IndexSearch').style.left = (rect.left - 50);
           document.getElementById('IndexSearch').style.display = 'block'; // show
+          document.getElementById("IndexSearchInput").focus();
           }
       else document.getElementById('IndexSearch').style.display = 'none';
 
