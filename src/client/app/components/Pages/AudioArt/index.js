@@ -3,6 +3,11 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
 
+// import Wavesurfer from 'wavesurfer';
+// if (Wavesurfer) alert("ist da");
+// if (Wavesurfer) alert("ist eingelesen");
+
+
 // var Waveform = require('react-waveform');
 // import WaveForm from 'react-native-audiowaveform';
 
