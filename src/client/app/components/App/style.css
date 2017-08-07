@@ -1439,3 +1439,36 @@ display: none;
     }
 
 
+
+    .AudioArtText
+    {
+    position: absolute;    
+    top: 30%;
+    width: 100%;
+    left: 0;
+    height: 70%;
+    background: white;
+    }
+
+
+
+    .AudioArtExplanation
+    {
+    position: absolute;
+    width: 88%;
+    left: 6%;
+    top: 8%;
+    height: 86%;
+    background: white;   
+    -webkit-column-count: 4; /* Chrome, Safari, Opera */
+    -moz-column-count: 4; /* Firefox */
+    column-count: 4;    
+
+    -webkit-column-gap: 1.5vw; /* Chrome, Safari, Opera */
+    -moz-column-gap: 1.5vw; /* Firefox */
+    column-gap: 1.5vw;
+    font-size: calc(10px + 0.4vw);
+
+    color: black;
+    hyphens: auto
+    }

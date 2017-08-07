@@ -40,6 +40,9 @@ import motivation_EN from  './motivation_EN.txt';
 import computer_culture_DE from './Computerkultur_DE.txt';
 import computer_culture_EN from './Computerkultur_EN.txt';
 
+import AudioArt_DE from './AudioArt_DE.txt';
+
+
 // let vita_DE = 'Martin B';
 
 let signup_DE = 'In Kürze finden Sie hier einen Zugang, bei dem Sie sich einloggen können. Im Augenblick sind wir noch ganz altmodisch: Rufen Sie uns an, wenn Sie Interesse an einer Teilnahme haben.'
@@ -111,6 +114,8 @@ i18n.configure({
             "Search": "Search",
             "with": "with",
 
+            "AudioArt": AudioArt_DE,
+
         },
         'de': {
         	"hello": "Hallo Welt",
@@ -168,7 +173,9 @@ i18n.configure({
 
             "Downloads": "Dateien zum Download",
             "Search": "Suche",
-            "with": "mit",            
+            "with": "mit",   
+
+            "AudioArt": AudioArt_DE,         
 
         }
     },

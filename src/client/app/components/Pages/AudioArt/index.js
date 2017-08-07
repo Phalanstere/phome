@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
+import Waves from  '../../../components/Waves';
+
+console.log(Waves);
+
 
 // import Wavesurfer from 'wavesurfer';
 // if (Wavesurfer) alert("ist da");
@@ -32,7 +36,14 @@ class AudioArt extends Component {
 
     return (
         <div className ="AudioArtPage">
-          still under construction - now with waveforms
+          <Waves />
+
+          <div className ="AudioArtText">
+            <div className = "AudioArtExplanation">
+                { TEXT.__("AudioArt") }
+            </div>
+          </div>
+
         </div>
     );
   }

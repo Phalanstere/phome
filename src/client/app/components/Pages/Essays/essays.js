@@ -325,7 +325,7 @@ var essays = [
         },
     },
     {
-    title: "Pop und Softrware",
+    title: "Pop und Software",
       publisher: "Interface 5. Die Politik der Maschine",
       number: "Kulturbehörde Hamburg",
       date: '2002',
