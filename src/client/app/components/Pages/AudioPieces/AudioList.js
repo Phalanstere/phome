@@ -8,6 +8,7 @@ let audios = [
         en: "A piece about Dadaist artiss in a retirement home"  
       },
       id: 1,
+      image: './resources/oldman.jpg',
     },
     {
    title: "Rush hour / Da wo die Menschen sind",
@@ -119,8 +120,7 @@ let audios = [
       content: `Hörspiel-Farce: Siegfried, ein avantgardistischer Theatermacher kündigt als sensationelles neues Kunstereignis die Inszenierung eines Wüstenprojektes an. Eine kleine Gruppe von Anhängern ist ihm in ein Hotel am Rande der Wüste gefolgt und wartet gespannt auf die Einlösung des Versprechens. Alle Gedanken und Gespräche umkreisen das Thema Wüste als magischen Ort, an dem jeder seine eigenen Sehnsüchte verwirklicht sehen möchte. Aber niemand redet wirklich von der Wüste, sondern allein von seiner eigenen, höchstpersönlichen Wüste. Als der Künstler endlich bekanntgibt, wie seine Inszenierung aussehen wird, ist die Überraschung groß.`,
 
       speaker: ['Gerd Wameling', 'Ortrud Beginnen', 'Liselotte Rau', 'Friedrich W. Bauschulte', 'Edda Seippel', 'Walter Schmidinger' ],
-      image: 'http://vunature.com/wp-content/uploads/2017/01/deserts-dry-desert-cracks-land-bush-nature-wallpaper-screensaver-free-download-1714x1080.jpg',
-
+      image: './resources/Desert.jpg',
       duration: 66,
     },
     {
@@ -205,7 +205,10 @@ Die Arktis. Stille. Eine Stille, die so steril ist, daß es in den Ohren zu raus
       description: {
         de: "Eine Erkundung der Telekinetik",
         en: "An Exploration of Telekinetics"  
-        },
+      },
+      image: './resources/eisenbahn.jpg',
+      content: 'Eine Zeitungsmeldung: Moskau, 2. Oktober (AP). Für die sowjetischen Behörden ging es erst einmal darum, zu klären, warum ein weißgekleideter Mann einen Bahndamm entlanggelaufen, sich beim Herrannahen eines Güterzuges zwischen die Schienen gestellt hatte und dort mit erhobenen Händen stehengeblieben war.  In einem Aktenkoffer neben der Leiche fand sich laut „Sowjektskaja Rossija“ das Tagebuch und damit die Erklärung für das Verhalten Frenkels. Es war eine Tragödie. Die Notbremse half nicht mehr.',
+
       id: 13,
       directed_by: "Martin Burckhardt & Johannes Schmölling",
       speaker: ['Greger Hansen'],
@@ -340,6 +343,8 @@ Die Arktis. Stille. Eine Stille, die so steril ist, daß es in den Ohren zu raus
         en: "A Material History"  
         },
       id: 20,
+
+      image: './resources/glasses.jpg',
 
       content: `Die Geschichte der Dinge - das ist der Versuch, jene Rede zu wiederholen, die vor dem Verstummen (vor der "Verdinglichung") liegt. Dazu aber müssen die Dinge als unfertig, im Stande (oder besser: in der Schwebe) des Nochnicht gedacht werden. Nur hier, im Unfertigen, öffnet sich die Faszination, wird jene Begierde faßbar, die darauf zielt, sich selbst und die Dinge "fertig zu machen". Die Reise ins Innere des Kopfes, der sich selbst auslegt (als Uhr, als Bild, als Maschine), bezeichnet das Unterfangen, das sich Martin Burckhardt und Johannes Schmölling vorgenommen haben. Daraus hervorgegangen ist ein Zyklus von sechs ca. zwanzigminütigen Hörstücken. Nicht eigentlich Hörspiele im klassischen Sinn, als vielmehr auf eine bestimmte Weise getönte, durchstimmte Gedanken- und Empfindungsräume aus Sprache. Geräusch & Musik - Klangräume, in denen der Hörer sich aufhalten und bewegen kann soll, nicht als ein Außenstehender, sondern als derjenige, dem ein Platz freigehalten worden ist. So daß, im Idealfall, es der eigene Kopf ist, in den man hineinsteigen kann.`,
 

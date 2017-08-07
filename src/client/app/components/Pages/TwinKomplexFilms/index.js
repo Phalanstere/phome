@@ -27,7 +27,7 @@ Array.prototype.shuffle = function() {
 
 
 // let videos = videolist.shuffle();
-let videos = videolist;
+let videos = global.videolist;
 
 
 class TwinKomplexFilms extends Component {
