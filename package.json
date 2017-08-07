@@ -45,10 +45,10 @@
     "react-router-dom": "^4.1.1",
     "react-search": "^2.0.5",
     "react-slick": "^0.14.11",
-    "react-waveform": "^0.1.0",
     "react-wavesurfer": "^0.8.3",
     "redux": "^3.7.1",
     "redux-logger": "^3.0.6",
+    "wavesurfer.js": "^1.4.0",
     "wetty": "^0.2.0"
   },
   "devDependencies": {
