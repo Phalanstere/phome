@@ -1443,11 +1443,12 @@ display: none;
     .AudioArtText
     {
     position: absolute;    
-    top: 30%;
+    top: 50%;
     width: 100%;
     left: 0;
-    height: 70%;
+    height: 50%;
     background: white;
+    z-index: 3;
     }
 
 
@@ -1470,5 +1471,5 @@ display: none;
     font-size: calc(10px + 0.4vw);
 
     color: black;
-    hyphens: auto
+    hyphens: auto;
     }

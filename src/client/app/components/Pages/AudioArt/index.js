@@ -2,18 +2,8 @@ import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-import Waves from  '../../../components/Waves';
+import MusicVisualizer from  '../../../components/MusicVisualizer';
 
-console.log(Waves);
-
-
-// import Wavesurfer from 'wavesurfer';
-// if (Wavesurfer) alert("ist da");
-// if (Wavesurfer) alert("ist eingelesen");
-
-
-// var Waveform = require('react-waveform');
-// import WaveForm from 'react-native-audiowaveform';
 
 
 class AudioArt extends Component {
@@ -36,8 +26,8 @@ class AudioArt extends Component {
 
     return (
         <div className ="AudioArtPage">
-          <Waves />
 
+          <MusicVisualizer />
           <div className ="AudioArtText">
             <div className = "AudioArtExplanation">
                 { TEXT.__("AudioArt") }
