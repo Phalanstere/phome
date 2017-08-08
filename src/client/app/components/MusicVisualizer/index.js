@@ -222,6 +222,8 @@ class MusicVisualizer extends Component {
 
 
  componentWillUnmount() {
+    console.log("UMNOUNT DES VISUASLIZERS");
+
 
     // if (reqani) reqani = null;
     // if (reqani2) reqani2 = null;
@@ -238,7 +240,7 @@ class MusicVisualizer extends Component {
 
 
  componentDidMount() {
-    this.playAudio('./public/resources/Numbers.mp3' );
+    this.playAudio('./resources/Numbers.mp3' );
   }
 
 
