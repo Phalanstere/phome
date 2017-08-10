@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import { TweenLite, TweenMax, CSSPlugin, Power4 } from "gsap";
 
 import Animator from '../Animator';
-import Slider from './slider';
+// import Slider from './slider';
 
 
 'use strict';
@@ -52,6 +52,12 @@ disappear() {
         if (o.callback) setTimeout(o.callback, 1500);
 
       }
+}
+
+
+
+componentWillUnmount() {
+    this.animator.stop();
 }
 
 

@@ -118,8 +118,6 @@ this.init = function() {
         }
     }
 
-console.log("Hier kommt der Index");
-console.log ( this.index);  
 }
 
 

@@ -32,6 +32,33 @@ void main(void) {
 }`;
 
 
+let ffShader = `precision mediump float;
+
+uniform float time;
+uniform vec2 resolution;
+uniform sampler2D spectrum;
+
+void main(void) {
+  vec3 c;
+  float z = 0.1 * time;
+  vec2 uv = gl_FragCoord.xy / resolution;
+  vec2 p = uv - 0.5;
+  p.x *= resolution.x / resolution.y;
+  float l = 0.17 * length(p);
+  for (int i = 0; i < 3; i++) {
+    z += 0.07;
+    uv += p / l * (sin(z) + 1.0) * abs(sin(l * 6.0 - z * 2.0));
+    c[i] = 0.01 / length(abs(mod(uv, 1.0) - 0.5));
+  }
+  float intensity = texture2D(spectrum, vec2(l, 0.5)).x;
+  gl_FragColor = vec4(c / l * intensity, time);
+}`;
+
+
+
+
+
+
 
 
 function initQuad(gl) {
@@ -111,7 +138,7 @@ function draw() {
 
   // just taking the text
   const vertexShaderSrc = vShader;
-  const fragmentShaderSrc = fShader;
+  const fragmentShaderSrc = ffShader;
 
   // here the shader is constructed
   const fragShader = createShader(gl, vertexShaderSrc, fragmentShaderSrc)
@@ -249,8 +276,8 @@ class MusicVisualizer extends Component {
     let style = {
         position: 'absolute',
         top: '0',
-        left: '10%',
-        width: '80%',
+        left: '0%',
+        width: '100%',
         height: '40%',
         background: 'black',
         zIndex: 10,

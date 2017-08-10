@@ -160,14 +160,14 @@ export default class IndexSearch extends Component {
       switch(occ.name) {
           case 'audiolist':
             var link = audiolist[occ.id];
-            console.log(link);
+            // console.log(link);
             hash = "#/audio?id=" + link.id;
             window.location.hash = hash;
           break;
 
           case 'videolist':
             var link = videolist[occ.id];
-            console.log(link);
+            // console.log(link);
             store.dispatch({ type: "VIDEO_SELECTED", payload: link.link });  
 
             hash = "#/video?id=" + link.link;
@@ -181,7 +181,6 @@ export default class IndexSearch extends Component {
               {
               window.open(link.link, '_blank'); 
               }
-           console.log(link);
            hash = "#/journalism?id=" + link.id;
            window.location.hash = hash;
 
@@ -235,7 +234,6 @@ export default class IndexSearch extends Component {
 
 
   getTitle(occ) {
-    console.log(occ);
     var t = '';
     var res = null;
 
