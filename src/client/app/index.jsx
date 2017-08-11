@@ -60,7 +60,7 @@ import Book from './components/Pages/Book';
 import SampleChapter from './components/Pages/SampleChapter';
 
 import Video from './components/Pages/Video';
-
+import SourceCode from './components/Pages/SourceCode';
 
 
 import Computerworld from './components/Pages/Computerworld';
@@ -252,6 +252,8 @@ ReactDOM.render((
                 <Route path="/twinkomplex_videos" render={()=><TwinKomplexFilms/>}/>
 
                 <Route path="/video" render={()=><Video/>}/>
+
+                <Route path="/sourcecode" render={()=><SourceCode/>}/>
 
 
             </div>

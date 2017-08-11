@@ -30,6 +30,9 @@ var EisenhowerDE = "Wenn Sie ein Problem nicht lösen können,\nvergrößern Sie
 // import vita_DE from  "html-loader!./Vita_DE.html";
 
 
+import SourceCode_DE from './Sourcecode.txt';
+
+
 
 import vita_DE from  './Vita_DE.txt';
 import vita_EN from  './Vita_EN.txt';
@@ -116,6 +119,8 @@ i18n.configure({
 
             "AudioArt": AudioArt_DE,
 
+            "SourceCode": SourceCode_DE,
+
         },
         'de': {
         	"hello": "Hallo Welt",
@@ -175,7 +180,9 @@ i18n.configure({
             "Search": "Suche",
             "with": "mit",   
 
-            "AudioArt": AudioArt_DE,         
+            "AudioArt": AudioArt_DE,      
+
+            "SourceCode": SourceCode_DE,   
 
         }
     },

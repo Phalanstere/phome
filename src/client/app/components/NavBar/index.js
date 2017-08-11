@@ -231,6 +231,9 @@ class NavBar extends Component {
 
                 <MenuItem eventKey={'ALL_AND_NOTHING'} href="#all_and_nothing">{  TEXT.__('AllNothingSite') }</MenuItem>
 
+
+                <MenuItem eventKey={'SOURCECODE'} href="#sourcecode">{  TEXT.__('Source Code') }</MenuItem>
+                
                 <MenuItem divider />
                 <MenuItem onClick = { this.digital_survival } eventKey={'DIGITAL SURVIVAL'} >{  TEXT.__('Digital Survival Training') }</MenuItem>
             </NavDropdown> 

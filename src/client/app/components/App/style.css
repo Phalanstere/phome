@@ -1473,3 +1473,52 @@ display: none;
     color: black;
     hyphens: auto;
     }
+
+
+
+    .SourceCode
+    {
+    position: absolute;
+    top: 52px;
+    width: 100%;
+    height: calc(100% - 52px);
+    background: white;    
+    color: darkgrey;
+    font-family: Open Sans;
+    overflow: hidden;
+    }
+
+
+    .Statement
+    {
+    position: absolute;    
+    font-size: 1.2vw; 
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 50%;
+    width: 50%;
+    height: 100px;
+    margin: auto;
+    z-index: 2;
+    }
+
+
+
+    .SourceCode img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    #ShadowCode {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 12vw;
+        z-index: 1;
+        color: transparent;
+        text-shadow: 20px 80px 100px black;
+    }
