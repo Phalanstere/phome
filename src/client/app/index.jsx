@@ -14,7 +14,6 @@ import {
 import { createBrowserHistory } from 'history'
 const history = createBrowserHistory();
 
-import Psychotest from './components/Psychotest'
 import './components/Psychotest/styles.css';
 
 import NavBar from './components/NavBar';
@@ -45,6 +44,10 @@ import Downloads from './components/Pages/Downloads';
 
 import TwinComplex from './components/Pages/TwinComplex';
 import TwinKomplexFilms from './components/Pages/TwinKomplexFilms';
+
+import TwinKomplexPsychotest from './components/Pages/TwinKomplexPsychotest';
+import TwinKomplexStore from './components/Pages/TwinKomplexStore';
+
 
 import Audio from './components/Pages/Audio';
 import AudioPieces from './components/Pages/AudioPieces';
@@ -250,6 +253,11 @@ ReactDOM.render((
 
                 <Route path="/performances" render={()=><Performances/>}/>
                 <Route path="/twinkomplex_videos" render={()=><TwinKomplexFilms/>}/>
+
+                <Route path="/twinkomplex_psychotest" render={()=><TwinKomplexPsychotest/>}/>
+                <Route path="/twinkomplex_store" render={()=><TwinKomplexStore/>}/>
+
+
 
                 <Route path="/video" render={()=><Video/>}/>
 

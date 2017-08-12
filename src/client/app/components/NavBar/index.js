@@ -229,6 +229,9 @@ class NavBar extends Component {
               <MenuItem eventKey={'TWINCOMPLEX'} href="#twinkomplex">{  TEXT.__('TwinKomplex') }</MenuItem>
               <MenuItem eventKey={'TWINCOMPLEXFILMS'} href="#twinkomplex_videos">{  TEXT.__('TwinKomplexFilms') }</MenuItem>
 
+              <MenuItem eventKey={'TWINCOMPLEXFILMS'} href="#twinkomplex_psychotest">{  TEXT.__('TwinKomplex Psychotest') }</MenuItem>
+              <MenuItem eventKey={'TWINCOMPLEXFILMS'} href="#twinkomplex_store">{  TEXT.__('TwinKomplex Store') }</MenuItem>
+
                 <MenuItem eventKey={'ALL_AND_NOTHING'} href="#all_and_nothing">{  TEXT.__('AllNothingSite') }</MenuItem>
 
 

@@ -1058,6 +1058,25 @@ cursor: pointer;
 
 
 
+.TwinKomplexPsycho
+{
+position: absolute;
+left: 0;
+right: 0;
+top: 52px;
+margin: auto;
+font-size: calc(15px + 10vw);
+line-height: calc(15px + 0.7vw);
+background-position: center bottom;
+opacity: 1;
+width: 100%;
+height: calc(100% - 52px);
+font-family: Open Sans;
+background: white;
+overflow: hidden;       
+}
+
+
 .AllNothing{
 position: absolute;
 left: 0;
