@@ -14,6 +14,8 @@ import {
 import { createBrowserHistory } from 'history'
 const history = createBrowserHistory();
 
+
+
 import './components/Psychotest/styles.css';
 
 import NavBar from './components/NavBar';
@@ -79,12 +81,31 @@ import { createStore } from 'redux';
 
 // import reducer from './reducers';
 
+var ReactGA = require('react-ga');
+ReactGA.initialize('UA-104455713-2');
+
+
+function logPageView() {
+  ReactGA.set({ page: window.location.pathname + window.location.search });
+  ReactGA.pageview(window.location.pathname + window.location.search);
+}
+
+
+history.listen(( location, action) => {
+    logPageView();
+})
+
+
 
 
 let initialState: State = {
 	"language": ['de', 'en'],
 	"actual_language": 'de'
 }
+
+
+
+
 
 
 const reducer = (state = initialState, action) => {
@@ -202,7 +223,7 @@ import DynamicTitlingBackground from './components/DynamicTitlingBackground'
 
 ReactDOM.render((
       <Provider store={store}>
-        <HashRouter history = {history} >
+        <HashRouter history = {history}  >
             <div>
                 <Route path="/" render={()=><App/>}/>
                 <Route path="/contact" render={()=><Contact/>}/>

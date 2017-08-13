@@ -207,16 +207,8 @@ class TwinKomplexStore extends Component {
 
     return (
         <div className = "computerworld">
-          <div id = "DiaShowCanvas">
-            <PictureShow random_sequence list = { imageList }  duration = { 6000}  interval = { 3000 } type = { "FADE"} parentID = "DiaShowCanvas" />
-          </div>
-
-          <div className = "Game">
-
-            <div className = "Explanation">
-              <h1>TwinKomlex - A Real World Game</h1>
-              { TEXT.__("twinkomplex_game") }
-            </div>
+          <div id = "StoreCanvas">
+            <PictureShow random_sequence list = { imageList }  container = { "StoreContainer" } duration = { 6000}  interval = { 3000 } type = { "FULLSCREEN"} parentID = "StoreCanvas" />
           </div>
 
         </div>

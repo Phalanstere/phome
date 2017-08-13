@@ -32,6 +32,10 @@ export default class PictureShow extends Component {
 
     this.dimRatio = 1.7;
 
+    this.container = 'DiaContainer';
+    if (this.props.container) this.container = this.props.container;
+
+
     this.state = {
       interval: 5000,
       duration: 1000,
@@ -293,6 +297,69 @@ export default class PictureShow extends Component {
 
 
 
+
+ create_fullscreen_animation() {
+   let obj = {
+      autostart: true,
+      loop: true,
+    };
+    
+   obj.events = [];
+
+
+   let list = this.props.list;
+   if (this.props.random_sequence) list = shuffle(list);
+
+   let interval = this.state.interval;
+   let duration = this.state.duration;
+   
+   if (this.props.interval) interval = this.props.interval;
+   if (this.props.duration) duration = this.props.duration;
+
+   for (var i = 0; i < list.length; i++) {
+    let div   = "dia" + i;
+    let time  = this.get_time(i, interval);
+
+    var e = {
+      type: "greensockArray",
+      div: div,  
+      time: time,
+      duration: 1200,
+      events: [ { duration: 0,
+                  display: 'block',
+                  width: '100%',
+                  right: 0,
+                  margin: 'auto'
+
+                },
+                {
+                  duration: 600,
+                  opacity: 1,
+                  delay: 400,
+
+                },
+                {
+                delay: 2500,  
+                duration: 600,
+                opacity: 0.01,  
+                },
+                {
+                display: 'none',
+                delay: 3200
+                }
+              ]
+      }
+    
+    obj.events.push(e);
+    // console.log("Anzahl Events " + obj.events.length);
+
+    }
+
+ return obj;
+ }
+
+
+
  create_fade_animation() {
    let obj = {
       autostart: true,
@@ -364,6 +431,11 @@ export default class PictureShow extends Component {
         obj = this.create_fade_animation();
       break;  
 
+      case "FULLSCREEN":
+        obj = this.create_fullscreen_animation();
+      break;
+
+
       default: 
         obj = this.create_slide_animation();
       break;
@@ -391,7 +463,7 @@ export default class PictureShow extends Component {
 
   
       nlist.push(
-        <div key id = { id } key = { i } className = 'DiaContainer' >
+        <div key id = { id } key = { i } className = { this.container } >
           <img className = 'diashowImage' src = { b } />
          </div>
         )
