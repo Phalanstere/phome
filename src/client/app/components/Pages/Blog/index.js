@@ -22,7 +22,28 @@ class Blog extends Component {
    }
 
 
+  componentWillMound() {
+    console.log("Hier sollte die Komponente starten");
+    alert("Hier kommt die Komponente");
+  }
+
+
   componentDidMount() {
+    console.log ( "Hier kommt der Blog " + window.location);
+    var s = window.location.hash;
+    var suffix = "";
+
+    if (s.length > 6)
+      {
+      suffix = s.slice(6, s.length -1);
+      console.log(suffix);
+      }
+
+    this.src="http://ludicmedia.de:8000";
+    this.src += suffix;
+
+
+
     let width = window.innerWidth;
     let height = window.innerHeight - 52;
 
@@ -68,7 +89,7 @@ class Blog extends Component {
     return (
       <div id = "Blog" className = "Blog">
         <div className = "BlogFrame">
-        <iframe style = { style } src="http://ludicmedia.de:8000" width = { this.state.width } height = { this.state.height } ></iframe>
+        <iframe style = { style } src= { this.src}  width = { this.state.width } height = { this.state.height } ></iframe>
         </div>
       </div>
 
