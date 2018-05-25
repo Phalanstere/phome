@@ -1057,7 +1057,8 @@ margin: auto;
 font-size: calc(15px + 0.2vw);
 line-height: calc(15px + 0.7vw);
 width: 40%;
-height: auto;
+height: 70%;
+overflow: auto;
 padding: 2vw;
 paddingBottom: 3vw;
 color: black;
@@ -1555,6 +1556,21 @@ display: none;
     top: 0;
     bottom: 50%;
     width: 50%;
+    height: 100px;
+    margin: auto;
+    z-index: 2;
+    }
+
+
+    .BigStatement
+    {
+    position: absolute;    
+    font-size: 1.2vw; 
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 50%;
+    width: 70%;
     height: 100px;
     margin: auto;
     z-index: 2;
