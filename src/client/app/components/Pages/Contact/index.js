@@ -8,6 +8,7 @@ import { connect } from 'react-redux';
 import { TweenMax } from "gsap";
 
 
+import DataProtect from './dataprotect';
 
 
 
@@ -93,7 +94,12 @@ class Contact extends Component {
             { this.state.TEXT.__('reaction') }
             </div>
 
+          <hr></hr>
+          <DataProtect></DataProtect>  
+
           </div>
+
+
         </div>  
 
     );
