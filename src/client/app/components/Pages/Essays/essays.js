@@ -530,7 +530,41 @@ var essays = [
     pdf: './resources/Digitalisierung.pdf',
 
     },
-   
+    {
+    title: "Was Quote macht. Oder: Bei 8'54'' siehst du aus wie ein Pferd",
+    publisher: "Merkur",
+    number: "Dezember",
+    date: '2017',
+      description: {
+        de: "Über die Logik der Aufmerksamkeitsökonomie",
+        en: "On contemporary attention economy"  
+      },
+    id: 38
+    },
+    {
+    title: "Der Waschbär grüßt - wir klicken",
+    publisher: "Zeit online",
+    number: "3.12.",
+    date: '2017',
+      description: {
+        de: "Über die Logik der Aufmerksamkeitsökonomie",
+        en: "On contemporary attention economy"  
+      },
+    id: 39,
+    link: 'https://www.zeit.de/kultur/2017-11/aufmerksamkeitsoekonomie-quote-clickbaiting-social-media'
+  },
+  {
+    title: "Ungeheure Apparate",
+    publisher: "Zeit Geschichte. Marx und die Gebur des modernen Kapitalismus",
+    number: 3,
+    date: '2018',
+      description: {
+        de: "Über Marx und sein Maschinenfragment",
+        en: "On Marx and his machine fragment"  
+      },
+    id: 40
+  },
+
 
   // http://www.martin-burckhardt.de/Arbeitsspeicher.PDF 
   ]

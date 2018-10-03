@@ -66,7 +66,7 @@ import SampleChapter from './components/Pages/SampleChapter';
 
 import Video from './components/Pages/Video';
 import SourceCode from './components/Pages/SourceCode';
-
+import Quotes from './components/Pages/Quotes';
 
 import Computerworld from './components/Pages/Computerworld';
 import AllNothing from './components/Pages/AllNothing';
@@ -77,6 +77,7 @@ import Performances from './components/Pages/Performances';
 
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
+
 
 
 // import reducer from './reducers';
@@ -283,7 +284,7 @@ ReactDOM.render((
                 <Route path="/video" render={()=><Video/>}/>
 
                 <Route path="/sourcecode" render={()=><SourceCode/>}/>
-
+                <Route path="/quotes" render={()=><Quotes/>}/>
 
             </div>
         </HashRouter >

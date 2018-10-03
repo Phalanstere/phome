@@ -54,7 +54,11 @@ import Alles_DE from "html-loader!../../../components/TEXT/Alles_DE.html";
 
 import Machine_EN from "html-loader!../../../components/TEXT/Maschine_EN.html";
 
+import Minden_DE from "html-loader!../../../components/TEXT/MINDEN_DE.html";
+import Minden_EN from "html-loader!../../../components/TEXT/MINDEN_EN.html";
 
+import Digit_DE from "html-loader!../../../components/TEXT/Digit_DE.html";
+import Digit_EN from "html-loader!../../../components/TEXT/Digit_EN.html";
 
 
 var TEXT = global.TEXT;
@@ -307,7 +311,32 @@ The digital world, the authors explain, summons forth fantasies of a chiliastic 
       de: "Die Maschine ist die große Unbekannte des Denkens. Wenn dies sonderbar anmutet, weil man ihr als Metapher überall begegnet, so sollte man einen Blick auf unser Gottesbild werfen: Nacheinander wurde er von der Kultur zum Theaterereignis, zum Uhrmacher und schließlich zum Programmierer umgeschult. Worin liegt der philosophische Nerv der Maschine, dieser großen Unbekannten des Denkens? Ausgehend von der Rätselfrage des ›deus ex machina‹ wird der Leser in kurzen, prägnanten Abschnitten mit dem ›Denken ohne Denker‹ konfrontiert. Über die historischen Exkursionen hinaus führt Martin Burckhardt in dieser philosophischen Grundlegung den Leser in die Gegenwart auf den so langsamen wie unweigerlichen Rückzug der Philosophie und der gleichzeitigen Explosion maschineller Intelligenzen hin. Die Maschine ist kein technisches Gadget mehr, sondern längst zur geistigen Größe geworden. Sie ist das Unbewusste der Philosophie, der Gesellschaft überhaupt. Würde der Geist der Maschine freigesetzt, wäre endlich eine nun von allem metaphysischen Ballast befreite, radikal geistesgegenwärtige Philosophie denkbar."
     }
    },
-
+   {
+   title: "Minden és semmi. A digitális világpusztítása",
+   publisher: "Atlantisz",
+   date: '2018',
+   image: './resources/Minden.jpg',
+   pages: '92',
+   size: 0.8,
+   id: 17,
+   description: {
+      de: Minden_DE,
+      en: Minden_EN,
+    }
+   },
+   {
+   title: "Eine kurze Geschichte der Digitalisierung",
+   publisher: "Penguin Verlag",
+   date: '2018',
+   image: './resources/KurzeGeschichte.jpg',
+   pages: '251',
+   size: 0.8,
+   id: 17,
+   description: {
+      de: Digit_DE,
+      en: Digit_EN,
+    }
+   },
   ]
 
 

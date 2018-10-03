@@ -129,5 +129,12 @@
     pages: 220,
     size: 0.8
    },
-
+   {
+   title: "Minden és semmi. A digitális világpusztítása",
+   publisher: "Atlantisz",
+   date: '2018',
+   image: './resources/KurzeGeschichte.jpg',
+   pages: '92',
+   size: 0.8
+   }
   ]";

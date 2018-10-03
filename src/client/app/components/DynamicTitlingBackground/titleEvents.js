@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 
 
 
-var news = ["_News", "_Philosophie der Maschine", "_Herbst 2017", "_Matthes & Seitz Berlin", "_All and Nothing", "_MIT press, Boston", "_Fall 2017"]
+var news = ["_News", "_Kurze Geschichte der Digitalisierung", "_November 2018", "_Penguin Verlag"]
 
 
 function createNews(list, obj, start) {
